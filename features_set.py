@@ -32,9 +32,9 @@ OBJPRP = rf"(\b(me|us|him|her|them|you|it)_\S+|{DEM})"
 SUBJ = rf"({ART}?\s?{NMOD}?\s?{NOUN}|{SUBPRP})"
 OBJ = rf"({ART}?\s?{NMOD}?\s?{NOUN}|{OBJPRP})"
 CC = r"(\b(and|or)_\S+)"
-WHP = rf"((who|whom|which|whose_\S+ {NMOD}?\s?{NOUN})_\S+)"
-WHO = r"((what|where|when|how|whether|why|whoever|whomever|whichever|wherever|whenever|whatever|however)_\S+)"
-PREP = r"((against|amid|amidst|among|amongst|at|besides|between|by|despite|during|except|for|from|in|into|minus|notwithstanding|of|off|on|onto|opposite|out|per|plus|pro|re|than|through|throughout|thru|toward|towards|upon|versus|via|with|within|without)_\S+|to_IN)"
+WHP = rf"(\b(who|whom|which|whose_\S+ {NMOD}?\s?{NOUN})_\S+)"
+WHO = r"(\b(what|where|when|how|whether|why|whoever|whomever|whichever|wherever|whenever|whatever|however)_\S+)"
+PREP = r"(\b(against|amid|amidst|among|amongst|at|besides|between|by|despite|during|except|for|from|in|into|minus|notwithstanding|of|off|on|onto|opposite|out|per|plus|pro| re|than|through|throughout|thru|toward|towards|upon|versus|via|with|within|without)_\S+|to_IN)"
 
 # -------------------------------------- Structural pattern --------------------------------------- #
 SIX_LETTER_WORD_N_LONGER = r"(\S{6,}(?=_\S+))"
@@ -65,12 +65,12 @@ IND_CLAUSE_COORD = fr"{CC} ({ADV}|\S+_IN)?\s?({SUBPRP}|\S+_EX|{WHO}|{WHP}) ({ADV
 
 # WH structure
 WH_QUESTION = rf"{WHO} {AUX} ({NOT}|{ADV})?\s?({NOT}|{ADV})?\s?{SUBJ}"
-WH_CLAUSE = rf"{WHO} \b(?:(?!{AUX})\S)+|what_\S+ ({AUX}\s?{NOT}?|{ADV})?\s?{ADV}?\s?{VERB} {NOT}?\s?\b(?:(?!{SUBJ})\S)+"
+WH_CLAUSE = rf"{WHO} (?:(?!{AUX})\S)+|what_\S+ ({AUX}\s?{NOT}?|{ADV})?\s?{ADV}?\s?{VERB} {NOT}?\s?\b(?:(?!{SUBJ})\S)+"
 
 # Nominal postmodifying clause
 THAT_RELATIVE = rf"(that_WDT|{NOUN} that_\S+ ({AUX}\s?{NOT}?|{ADV})?\s?({AUX}|{VERB})|{NOUN} that_\S+ {SUBJ})"
-WH_RELATIVE_SUB = rf" \b(?:(?!((ask|tell|told)(s|ed|ing)?_\S+|told_\S+))\S)+ \S+ ({NOUN}|\S+_PRP) {WHP} ({AUX}\s?{NOT}?|{ADV})?\s?({AUX}|{VERB})"
-WH_RELATIVE_OBJ = rf" \b(?:(?!((ask|tell)(s|ed|ing)?_\S+|told_\S+))\S)+ \S+ ({NOUN}|\S+_PRP) {WHP} \b(?:(?!{AUX}|{VERB}|{ADV}|{NOT})\S)+"
+WH_RELATIVE_SUB = rf" (?:(?!((ask|tell|told)(s|ed|ing)?_\S+|told_\S+))\S)+ \S+ ({NOUN}|\S+_PRP) {WHP} ({AUX}\s?{NOT}?|{ADV})?\s?({AUX}|{VERB})"
+WH_RELATIVE_OBJ = rf" (?:(?!((ask|tell)(s|ed|ing)?_\S+|told_\S+))\S)+ \S+ ({NOUN}|\S+_PRP) {WHP} (?:(?!{AUX}|{VERB}|{ADV}|{NOT})\S)+"
 PREP_WH_RELATIVE = rf"{PREP} (who|whom|which|whose)_\S+"
 PAST_PARTI_POST_NOMINAL_CLAUSE = rf"({NOUN}|{QUANPRP}) \S+VBN ({PREP}|{BE}|{ADV})"
 
@@ -124,8 +124,8 @@ GROUP_N = r"(airline|institute|colony|bank|flight|church|hotel|firm|hospital|hou
 ABSTRACT_N = r"(action|activity|application|argument|development|education|effect|function|method|research|result|process|accounting|achievement|addition|administration|approach|arrangement|assignment|competition|construction|consumption|contribution|counseling|criticism|definition|discrimination|description|discussion|distribution|division|eruption|evolution|exchange|exercise|experiment|explanation|expression|formation|generation|graduation|management|marketing|marriage|mechanism|meeting|operation|orientation|performance|practice|presentation|procedure|production|progress|reaction|registration|regulation|revolution|selection|session|strategy|teaching|technique|tradition|training|transition|treatment|trial|act|agreement|attempt|attendance|birth|break|claim|comment|comparison|conflict|deal|death|debate|demand|answer|control|flow|service|work|test|use|war|change|question|study|talk|task|trade|transfer|admission|design|detail|dimension|direction|disorder|diversity|economy|emergency|emphasis|employment|equilibrium|equity|error|expense|facility|failure|fallacy|feature|format|freedom|fun|gender|goal|grammar|health|heat|help|identity|image|impact|importance|influence|input|labor|leadership|link|manner|math|matrix|meaning|music|network|objective|opportunity|option|origin|output|past|pattern|phase|philosophy|plan|potential|prerequisite|presence|principle|success|profile|profit|proposal|psychology|quality|quiz|race|reality|religion|resource|respect|rest|return|risk|substance|scene|security|series|set|setting|sex|shape|share|show|sign|signal|sort|sound|spring|stage|standard|start|stimulus|strength|stress|style|support|survey|symbol|topic|track|trait|trouble|truth|variation|variety|velocity|version|whole|action|account|condition|culture|end|factor|grade|interest|issue|job|kind|language|law|level|life|model|name|nature|order|policy|position|power|pressure|relationship|requirement|role|rule|science|side|situation|skill|source|structure|subject|type|information|right|state|system|value|way|address|absence|advantage|aid|alternative|aspect|authority|axis|background|balance|base|beginning|benefit|bias|bond|capital|care|career|cause|characteristic|charge|check|choice|circuit|circumstance|climate|code|color|column|combination|complex|connection|constant|constraint|contact|content|contract|context|contrast|crime|criteria|cross|current|curriculum|curve|debt|density)(s|es)?_NN\S?\S?"
 
 # verb subcategories
-BE_MAIN_VERB = rf"({BE}| 's_V\S+) ({NOT}|{ADV})?\s?({NOT}|{ADV})?\s?({NMOD}|{PREP})"
-PRO_VERB_DO = rf" ((doing|done)_\S+| \b(?:(?!{WHO}|{WHP})\S)+ {ADV}?\s?{DO} \b(?:(?!{NOT}|{VERB}|{SUBPRP}|{ADV} {VERB})\S)+)"
+BE_MAIN_VERB = rf"({BE}| 's_V\S+) ({NOT}|{ADV})?\s?({NOT}|{ADV})?\s?({NMOD}|\S+_IN)|({BE}| 's_V\S+) {ADV} {ADV}?\s?\S+_PRP"
+PRO_VERB_DO = rf" ((doing|done)_\S+| (?:(?!{WHO}|{WHP})\S)+ {ADV}?\s?{DO} (?:(?!{NOT}|{VERB}|{SUBPRP}|{ADV} {VERB})\S)+)"
 ACTIVITY_V = r"(buy|bought|make|made|get|got|gotten|go|went|give|gave|take|took|taken|come|came|use|leave|left|show|try|tried|work|move|follow|put|pay|bring|brought|meet|met|play|run|hold|held|turn|send|sent|sit|sat|wait|walk|carry|carried|lose|lost|eat|ate|watch|reach|add|produce|provide|pick|wear|wore|open|win|won|catch|pass|shake|smile|stare|sell|sold|spend|spent|apply|applied|form|obtain|arrange|beat|check|cover|divide|earn|extend|fix|hang|hung|join|lie|lay|obtain|pull|repeat|receive|save|share|smile|throw|threw|visit|accompany|accompanied|acquire|advance|behave|borrow|burn|clean|climb|combine|controll?|defend|deliver|dig|dug|encounter|engage|exercise|expand|explore|reduce)(s|d|ed|ing)?_VB\S?"
 COMMUNICATION_V = r"(say|said|tell|told|call|ask|write|wrote|written|talk|speak|spoke|thank|describe|claim|offer|admit|announce|answer|argue|deny|denied|discuss|encourage|explain|express|insist|mention|offer|propose|quote|reply|replied|shout|sign|sing|sang|state|teach|warn|accuse|acknowledge|address|advise|appeal|assure|challenge|complain|consult|convince|declare|demand|emphasize|excuse|inform|invite|persuade|phone|pray|promise|question|recommend|remark|respond|specify|specified|swear|threaten|urge|welcome|whisper|suggest)(s|d|ed|ing)?_VB\S?"
 MENTAL_V = r"(see|saw|seen|know|knew|known|think|thought|find|found|want|mean|meant|need|feel|felt|like|hear|remember|believe|read|consider|suppose|listen|love|wonder|understand|expect|hope|assume|determine|agree|bear|care|choose|compare|decide|discover|doubt|enjoy|examine|face|forget|hate|identify|imagine|intend|learn|mind|miss|notice|plan|prefer|prove|realize|recall|recognize|regard|suffer|wish|worry|accept|afford|appreciate|approve|assess|blame|bother|calculate|conclude|celebrate|confirm|count|dare|deserve|detect|dismiss|distinguish|experience|fear|forgive|guess|ignore|impress|interpret|judge|justify|observe|perceive|predict|pretend|reckon|remind|satisfy|solve|study|suspect|trust|figure)(s|d|ed|ing)?_VB\S?"
@@ -136,11 +136,11 @@ ASPECTUAL_V = r"(start|keep|kept|stop|begin|began|begun|complete|end|finish|ceas
 
 # adjective subcategories
 ATTRIBUTIVE_ADJ = rf"({ADJ}(?= ({CC}?\s?{ADJ} {NOUN}|{NOUN}|ones?_\S+))|(the_\S+|{QUANPRP}) {ADJ})"
-PREDICATIVE_ADJ = rf"{LINKING_V} ({NOT}|{ADV})?\s?({NOT}|{ADV})?\s?{ADJ} \b(?:(?!{ADJ}|{NOUN}|ones?_\S+)\S)+|{BE} {NOT}?\s?{SUBPRP}\s?({NOT}|{ADV})?\s?{ADJ} \b(?:(?!{ADJ}|{NOUN})\S)+| \b(?:(?!{QUANPRP}|the_\S+)\S)+ {ADJ} \S+_(IN|CC|WRB|WP\S?|WDT)"
+PREDICATIVE_ADJ = rf"{LINKING_V} ({NOT}|{ADV})?\s?({NOT}|{ADV})?\s?{ADJ} (?:(?!{ADJ}|{NOUN}|ones?_\S+)\S)+|{BE} {NOT}?\s?{SUBPRP}\s?({NOT}|{ADV})?\s?{ADJ} (?:(?!{ADJ}|{NOUN})\S)+| (?:(?!{QUANPRP}|the_\S+)\S)+ {ADJ} \S+_(IN|CC|WRB|WP\S?|WDT)"
 
 # adverb subcategories
-PLACE_ADV = r"(aboard|above|abroad|across|ahead|alongside|around|ashore|astern|away|behind|below|beneath|beside|downhill|downstairs|downstream|east|far|hereabouts|indoors|inland|inshore|inside|locally|near|nearby|north|nowhere|outdoors|outside|overboard|overland|overseas|south|underfoot|underground|underneath|uphill|upstairs|upstream|west)_[^N]\S+"
-TIME_ADV = r"(afterwards|again|earlier|early|eventually|formerly|immediately|initially|instantly|late|lately|later|momentarily|now|nowadays|once|originally|presently|previously|recently|shortly|simultaneously|soon_\S+ as|subsequently|to-?day|to-?morrow|to-?night|yesterday)_\S+"
+PLACE_ADV = r"\b(aboard|above|abroad|across|ahead|alongside|around|ashore|astern|away|behind|below|beneath|beside|downhill|downstairs|downstream|east|far|hereabouts|indoors|inland|inshore|inside|locally|near|nearby|north|nowhere|outdoors|outside|overboard|overland|overseas|south|underfoot|underground|underneath|uphill|upstairs|upstream|west)_(?:(?!NNP)\S)+"
+TIME_ADV = r'\b(afterwards|again|earlier|early|eventually|formerly|immediately|initially|instantly|late|lately|later|momentarily|now|nowadays|once|originally|presently|previously|recently|shortly|simultaneously|subsequently|today|to-day|tomorrow|to-morrow|tonight|to-night|yesterday|soon_\S+ as)_\S+'
 NONFACTIVE_ADV = r"((accordingly|confidentially|figuratively|speaking|frankly|generally|honestly|mainly|strictly|technically|speaking|truthfully|typically|reportedly)_|according_\S+ to_)"
 ATTITUDINAL_ADV = r"((amazingly|astonishingly|conveniently|curiously|disturbingly|hopefully|fortunately|importantly|ironically|regrettably|rightly|sadly|sensibly|surprisingly|unbelievably|unfortunately|wisely)_\S+|even_\S+ worse_\S+)"
 FACTIVE_ADV = r"((actually|always|certainly|definitely|indeed|inevitably|in_IN fact_NN|never|obviously|really|undoubtedly)_\S+|without_\S+ doubt_\S+|no_\S+ doubt_\S+|of_\S+ course_\S+)"
@@ -150,7 +150,7 @@ LIKELIHOOD_ADV = rf"((apparently|evidently|perhaps|possibly|predictably|probably
 CAUSATIVE_CONJ = r"(because)_\S+"
 CONDITIONAL_CONJ = r"(if|unless)_\S+"
 CONTRASTIVE_CONJ = r"(although|tho|though|even_\S+ if|but|however|no_\S+ matter_\S+ how|whereas|despite|nevertheless|in_\S+ spite_\S+ of|regardless_\S+ of|as_\S+ opposed_\S+ to|in_\S+ contrast|instead_\S+ of_\S+|notwithstanding)_\S+"
-OTHER_CONJ = rf"(since|while|whilst|whereupon|whereas|whereby)_\S+|such_\S+ that_\S+|so_\S+ that_\S+(?= \b(?:(?!{NOUN}|{ADJ})\S)+)|(inasmuch|forasmuch|insofar|insomuch)_\S+|as_\S+ (long|soon)_\S+ as_\S+"
+OTHER_CONJ = rf"\b(since|while|whilst|whereupon|whereas|whereby)_\S+|(so|such)_\S+ that_\S+(?= (?:(?!{NOUN}|{ADJ})\S)+)|(inasmuch|forasmuch|insofar|insomuch)_\S+ as_\S+|as_\S+ (long|soon)_\S+ as_\S+"
 
 # modal subcategories
 POSSIBILITY_MD = r"(can?|may|might|could)_\S+"
@@ -161,7 +161,7 @@ PREDICTIVE_MD = r"(will| 'll|would|shall| 'd|wo|sha)_MD"
 CONJUNCT = r"((alternatively|(altogether|else|rather)|consequently|conversely|eg|furthermore|hence|however|ie|instead|likewise|moreover|namely|nevertheless|nonetheless|notwithstanding|otherwise|similarly|therefore|thus|viz|via)_\S+|in_\S+ (comparison|contrast|particular|addition|conclusion|consequence|sum|summary|any_\S+ event|any_\S+ case|other_\S+ words)_\S+|for_\S+ (example|instance)_\S+|instead_\S+ of_\S+|by_\S+ (contrast|comparison)_|as_\S+ a_\S+ (result|consequence)_\S+|on_\S+ the_\S+ (contrary|other_\S+ hand)_\S+)"
 DOWNTONER = r"(almost|barely|hardly|merely|mildly|nearly|only|partially|partly|practically|scarcely|slightly|somewhat)_\S+"
 AMPLIFIER = rf"(absolutely|altogether|completely|enormously|entirely|extremely|fully|greatly|highly|intensely|perfectly|strongly|thoroughly|totally|utterly|very|terribly|awfully|vastly)_\S+|so_\S+ {ADJ}"
-HEDGE = rf"(maybe|at_\S+ about|something_\S+ like|more_\S+ or_\S+ less)_\S+| \b(?:(?!{NMOD}|{WHO})\S)+ (sort|kind)_\S+ of_\S+|a_\S+ (little_\S+)?\s?bit_\S+"
+HEDGE = rf"(maybe|at_\S+ about|something_\S+ like|more_\S+ or_\S+ less)_\S+| (?:(?!{NMOD}|{WHO})\S)+ (sort|kind)_\S+ of_\S+|a_\S+ (little_\S+)?\s?bit_\S+"
 EMPHATICS = rf"((just|really|most|more|anyway|especially|full|much|totally)_\S+|(real|so|all)_\S+ {ADJ}|({DO}|even|always) {VERB}|for_\S+ sure_\S+|a_\S+ lot_\S+|such_\S+ an?_\S+)"
 POLITE_EXP = r"thanks?_\S+\s?(you)?|please_\S+|excuse_\S+ me_\S+"
 EVIDENTIAL_EXP = r"(amazing|bad|beautiful|best|better|crazy|fun|funny|glad|good|great|happy|hate|like|love|mad|nice|okay|problem|rather|serious|sorry|stupid|trouble|weird|wrong)_\S+"
@@ -344,5 +344,7 @@ def display_extracted_res(regex_pattern, pos_tagged_text):
     for res in results:
         extracted_texts.append(res[0])
     return '\n'.join(extracted_texts)
+
+
 
 
