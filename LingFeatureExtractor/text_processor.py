@@ -126,13 +126,19 @@ def get_texts_lemmas(raw_text):
     return [lemma for lemma in lemmas]
 
 
-def save_processed_text(raw_texts_dir, filename, new_dir_name, processed_text):
-    root = raw_texts_dir + "/" if not raw_texts_dir.endswith('/') else raw_texts_dir
+def get_num_unique_lemmas(raw_text):
+    lemmas = get_texts_lemmas(raw_text)
+    return len(set(lemmas))
+
+
+def save_processed_text(file_path, new_filename, new_dir_name, processed_text):
+    filename = file_path.split('/')[-1]
+    root = file_path.replace(filename, '')
     output_root = root + new_dir_name + "/"
     if not os.path.exists(output_root):
         os.mkdir(output_root)
-    filepath = output_root + filename
+    filepath = output_root + new_filename
     with open(filepath, 'w') as f:
         f.write(processed_text)
         f.close()
-        print(f"{filename} saved in {filepath}")
+        print(f"{new_filename} saved in {filepath}")
