@@ -2,7 +2,6 @@ from LingFeatureExtractor import features_set as fs
 from LingFeatureExtractor import text_processor as tp
 import pandas as pd
 import os
-from time import time
 
 
 def show_feature_names():
