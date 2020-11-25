@@ -1,1 +1,1 @@
-from LingFeatureExtractor.extractor import *
+from LFE.extractor import *
