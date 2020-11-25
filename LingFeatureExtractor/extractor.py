@@ -1,5 +1,5 @@
-from LingFeatureExtractor import features_set as fs
-from LingFeatureExtractor import text_processor as tp
+import features_set as fs
+import text_processor as tp
 import pandas as pd
 import os
 
