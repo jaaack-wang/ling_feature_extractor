@@ -6,21 +6,16 @@ import re
 
 TOKEN = r"(\S+)"
 NOT = r"(\b(not|n't)_\S+)"
-# be is added which is missing in Biber, but 's is dropped compared to Nini
-# 's is not added here because 's would also be a common abbreviation of has
 BE = r"(\b(am|is|are|was|were|be|being|been| 'm| 're)_\S+)"
 LINKING_V = rf"({BE}|\b(become|became|becoming|seem|grow|grew|grown|look|prove|proving|remain|smell|sound|taste|tasting|turn|get|got|gotten|getting|appear|feel|felt)(s|end|ing)?_\S+)"
-# 'd is dropped compared to Biber.
-# 'd is not added here because 'd would also be used as would
 HAVE = r"(\b(have|has|had|having| 've| 'd|hath)_\S+)"
 DO = r"(\b(do|does|did)_\S+)"
 MODAL = r"(\S+_MD)"
 AUX = rf"({BE}|{HAVE}|{DO}|{MODAL}| 's_VB\S?)"
-# _ is added to avoid matching with WRB (Wh-adverb)
 ADV = r"(\S+_RB)"
-ADJ = r"(\S+JJ\S?)"
-VERB = r"(\S+VB\S?)"
-NOUN = r"(\S+NN\S?\S?)"
+ADJ = r"(\S+_JJ\S?)"
+VERB = r"(\S+_VB\S?)"
+NOUN = r"(\S+_NN\S?\S?)"
 DEM = r"(\b(this|those|these)_\S+|that_DT)"
 ART = r"\b(an?_\S+|the_\S+)"
 NMOD = rf"(\S+_P?DT|\S+PRP$|\S+JJ\S?|\S+CD|{ART})"
@@ -46,8 +41,8 @@ CONTRACTION = r"(n't| '\S\S?)_[^P]\S+"
 
 # --------------------------------------- Sentential pattern ---------------------------------------- #
 # passive voice
-BY_PASSIVE = rf"({BE}| 's_V\S+) ({NOT}|{ADV})?\s?{SUBJ}?\s?({ADV}|{NOT})?\s?(\S+VBN) by_\S+"
-AGENTLESS_PASSIVE = rf"{BE} ({NOT}|{ADV})?\s?{SUBJ}?\s?({ADV}|{NOT})?\s?(\S+VBN)(?= \b(?:(?!by_)\S)+)"
+BY_PASSIVE = rf"({BE}| 's_V\S+) ({NOT}|{ADV})?\s?{SUBJ}?\s?({ADV}|{NOT})?\s?(\S+_VBN) by_\S+"
+AGENTLESS_PASSIVE = rf"{BE} ({NOT}|{ADV})?\s?{SUBJ}?\s?({ADV}|{NOT})?\s?(\S+_VBN)(?= \b(?:(?!by_)\S)+)"
 
 # Tense
 PAST_TENSE = r"(\S+_VBD)"
@@ -68,7 +63,7 @@ WH_QUESTION = rf"{WHO} {AUX} ({NOT}|{ADV})?\s?({NOT}|{ADV})?\s?{SUBJ}"
 WH_CLAUSE = rf"{WHO} (?:(?!{AUX})\S)+|what_\S+ ({AUX}\s?{NOT}?|{ADV})?\s?{ADV}?\s?{VERB} {NOT}?\s?\b(?:(?!{SUBJ})\S)+"
 
 # Nominal postmodifying clause
-THAT_RELATIVE = rf"(that_WDT|{NOUN} that_\S+ ({AUX}\s?{NOT}?|{ADV})?\s?({AUX}|{VERB})|{NOUN} that_\S+ {SUBJ})"
+THAT_RELATIVE = rf"({NOUN} that_\S+ ({AUX}\s?{NOT}?|{ADV})?\s?({AUX}|{VERB})|{NOUN} that_\S+ {SUBJ})"
 WH_RELATIVE_SUB = rf" (?:(?!((ask|tell|told)(s|ed|ing)?_\S+|told_\S+))\S)+ \S+ ({NOUN}|\S+_PRP) {WHP} ({AUX}\s?{NOT}?|{ADV})?\s?({AUX}|{VERB})"
 WH_RELATIVE_OBJ = rf" (?:(?!((ask|tell)(s|ed|ing)?_\S+|told_\S+))\S)+ \S+ ({NOUN}|\S+_PRP) {WHP} (?:(?!{AUX}|{VERB}|{ADV}|{NOT})\S)+"
 PREP_WH_RELATIVE = rf"{PREP} (who|whom|which|whose)_\S+"
@@ -104,8 +99,9 @@ ATTITUDINAL_ADJ_PLUS_THAT = r"(acceptable|adamant|advisable|afraid|alarmed|amaze
 PART_OF_SPEECH = [NOUN, VERB, NOUN, NMOD, ART, MODAL, NOT, PREP]
 
 # pronoun subcategories
-FIRST_PRP = r"(i|me|us|let_\S+ 's|my|we|our|myself|ourselves)_\S+"
-I_REFERENCE = r"(i|me|my|myself)_\S+"
+r"(i|me|my|myself)_\S+"
+FIRST_PRP_SING = r"(i|me|my|myself)_\S+"
+FIRST_PRP_PLURAL = r"(us|let_\S+ 's|we|our|ourselves)_\S+"
 SECOND_PRP = r"(you|your|yourself|yourselves|thy|thee|thyself|thou)_\S+"
 THIRD_PRP = r"(s?he|they|her|him|them|his|their|himself|herself|themselves)_\S+"
 IT_PRP = r"(it|its|itself)_\S+"
@@ -164,7 +160,7 @@ AMPLIFIER = rf"(absolutely|altogether|completely|enormously|entirely|extremely|f
 HEDGE = rf"(maybe|at_\S+ about|something_\S+ like|more_\S+ or_\S+ less)_\S+| (?:(?!{NMOD}|{WHO})\S)+ (sort|kind)_\S+ of_\S+|a_\S+ (little_\S+)?\s?bit_\S+"
 EMPHATICS = rf"((just|really|most|more|anyway|especially|full|much|totally)_\S+|(real|so|all)_\S+ {ADJ}|({DO}|even|always) {VERB}|for_\S+ sure_\S+|a_\S+ lot_\S+|such_\S+ an?_\S+)"
 POLITE_EXP = r"thanks?_\S+\s?(you)?|please_\S+|excuse_\S+ me_\S+"
-EVIDENTIAL_EXP = r"(amazing|bad|beautiful|best|better|crazy|fun|funny|glad|good|great|happy|hate|like|love|mad|nice|okay|problem|rather|serious|sorry|stupid|trouble|weird|wrong)_\S+"
+EVIDENTIAL_EXP = r"((amazing|bad|beautiful|best|better|crazy|fun|funny|glad|good|great|happy|hate|love|mad|nice|okay|problem|rather|serious|sorry|stupid|trouble|weird|wrong)_\S+|like_V\S+)"
 STANCE_RELATED = [CONJUNCT, DOWNTONER, AMPLIFIER, HEDGE, EMPHATICS, POLITE_EXP, EVIDENTIAL_EXP]
 
 # ============================================================================================== #
@@ -214,7 +210,7 @@ FEATURE_DICT = {
     "Certainty adj + to": CERTAINTY_ADJ_PLUS_TO,
     "Ability adj + to": ABILITY_ADJ_PLUS_TO,
     "Personal affect adj + to": AFFECT_ADJ_PLUS_TO,
-    "Ease/difficulty adj + to": EASE_HARD_ADJ_PLUS_TO,
+    "Ease_difficulty adj + to": EASE_HARD_ADJ_PLUS_TO,
     "Evaluative adj + to": EVALUATIVE_ADJ_PLUS_TO,
     "Control noun + to": CONTROL_NOUN_PLUS_TO,
 
@@ -241,8 +237,8 @@ FEATURE_DICT = {
     "Preposition": PREP,
 
     # Pronoun
-    "First person pronoun": FIRST_PRP,
-    "I reference": I_REFERENCE,
+    "First person pronoun singular": FIRST_PRP_SING,
+    "First person pronoun plural": FIRST_PRP_PLURAL,
     "Second person pronoun": SECOND_PRP,
     "Third person pronoun": THIRD_PRP,
     "Pronoun it": IT_PRP,
@@ -329,22 +325,47 @@ def total_char(tagged_text):
     return len(re.findall(r'\w', tagged_text))
 
 
-def feature_finder(regex_pattern, pos_tagged_text):
-    results = re.findall(rf"(\b\s?{regex_pattern})", pos_tagged_text, flags=re.IGNORECASE)
+def feature_finder(regex, pos_tagged_text):
+    results = re.findall(rf"(\b\s?{regex})", pos_tagged_text, flags=re.IGNORECASE)
     return results
 
 
-def get_feature_frequency(regex_pattern, pos_tagged_text):
-    return len(feature_finder(regex_pattern, pos_tagged_text))
+def get_feature_frequency(regex, pos_tagged_text):
+    return len(feature_finder(regex, pos_tagged_text))
 
 
-def display_extracted_res(regex_pattern, pos_tagged_text):
-    results = feature_finder(regex_pattern, pos_tagged_text)
-    extracted_texts = []
-    for res in results:
-        extracted_texts.append(res[0])
-    return '\n'.join(extracted_texts)
+def concordance_generator(results, pos_tagged_text, left=0, right=0):
+    if left == 0 and right == 0:
+        extracted_texts = []
+        for res in results:
+            extracted_texts.append(res[0])
+    else:
+        results = set([res[0] for res in results])
+        pattern = '|'.join(results)
+        tokens = re.findall(rf'({pattern}|\S+)', pos_tagged_text)
+        idx_all = [idx for idx, elem in enumerate(tokens) if elem in results]
+        extracted_texts = []
+        for idx in idx_all:
+            left_context = tokens[idx - left if idx - left > 0 else 0: idx]
+            left_context = ' '.join(left_context)
+            right_context = tokens[idx+1: idx + right + 1]
+            right_context = ' '.join(right_context)
+            concordance_text = f'{left_context}\t【{tokens[idx]} 】\t{right_context}'
+            extracted_texts.append(concordance_text)
+    return extracted_texts
 
 
+def display_extracted_res_by_regex(regex, pos_tagged_text, left=0, right=0, feature_name=None):
+    results = feature_finder(regex, pos_tagged_text)
+    num_cases = len(results)
+    msg = f'\n{"#"*10} {num_cases} cases found: {feature_name} {"#"*10}\n\n'
+    extracted_texts = concordance_generator(results, pos_tagged_text, left, right)
+    return msg + '\n'.join(extracted_texts)
 
+
+def display_extracted_res(results, pos_tagged_text=None, left=0, right=0, feature_name=None):
+    num_cases = len(results)
+    msg = f'\n{"#"*10} {num_cases} cases found: {feature_name} {"#"*10}\n\n'
+    extracted_texts = concordance_generator(results, pos_tagged_text, left, right)
+    return msg + '\n'.join(extracted_texts)
 
