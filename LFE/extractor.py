@@ -1,5 +1,12 @@
-from LingFeatureExtractor import features_set as fs
-from LingFeatureExtractor import text_processor as tp
+try:
+    from LFE import features_set as fs
+except ImportError:
+    import features_set as fs
+try:
+    from LFE import text_processor as tp
+except ImportError:
+    import text_processor as tp
+    
 import pandas as pd
 import os
 
