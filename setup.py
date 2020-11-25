@@ -18,13 +18,9 @@ setuptools.setup(
     keywords=['Computational linguistics', 'Corpus-linguistic tool', 'NLP', 'Natural Language Processing'],
 
     classifiers=[
-        "Intended Audience :: Linguistics",
-        "Intended Audience :: Science/Research",
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
-        'Topic :: Text Processing',
-        'Topic :: Text Processing :: Linguistic',
     ],
     python_requires='>=3.6',
     license="MIT License",
