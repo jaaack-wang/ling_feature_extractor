@@ -20,9 +20,7 @@ DEM = r"(\b(this|those|these)_\S+|that_DT)"
 ART = r"\b(an?_\S+|the_\S+)"
 NMOD = rf"(\S+_P?DT|\S+PRP$|\S+JJ\S?|\S+CD|{ART})"
 QUANPRP = r"(\b(everybody|somebody|anybody|everyone|someone|anyone|everything|something|anything)_\S+)"
-# you and it are added because when they are used, they will be disambiguated by the context
 SUBPRP = rf"(\b(i|we|he|she|they|you|it)_\S+|{DEM})"
-# her, you, it are added because of the same reasons
 OBJPRP = rf"(\b(me|us|him|her|them|you|it)_\S+|{DEM})"
 SUBJ = rf"({ART}?\s?{NMOD}?\s?{NOUN}|{SUBPRP})"
 OBJ = rf"({ART}?\s?{NMOD}?\s?{NOUN}|{OBJPRP})"
