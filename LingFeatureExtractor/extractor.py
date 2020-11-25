@@ -144,11 +144,13 @@ class CorpusLFE:
         filenames = tp.get_filenames_from_dir(self._file_dir)
         for filename in filenames:
             save_single_tagged_text(self._file_dir + filename)
+        print('Tagged corpus saved!')
 
     def save_cleaned_corpus(self):
         filenames = tp.get_filenames_from_dir(self._file_dir)
         for filename in filenames:
             save_single_cleaned_text(self._file_dir + filename)
+        print('Cleaned corpus saved!')
 
     def corpus_feature_fre_extraction(self, normalized_rate=100, save_tagged_corpus=True,
                                       save_extracted_features=True, left=0, right=0):
@@ -162,12 +164,6 @@ class CorpusLFE:
             freq_data.append(sub_data)
         pd.DataFrame(freq_data).to_excel('Feature_Fre_Extracted.xlsx')
         return freq_data
-
-    def save_pos_tagged_corpus(self):
-        filenames = tp.get_filenames_from_dir(self._file_dir)
-        for filename in filenames:
-            save_single_tagged_text(self._file_dir + filename)
-        print('Tagged corpus saved!')
 
     def save_corpus_extracted_features(self):
         other_feature_patterns = [v for v in fs.FEATURE_DICT.values()]
