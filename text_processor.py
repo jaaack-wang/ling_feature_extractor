@@ -5,6 +5,13 @@ import os
 from os import listdir
 from os.path import isfile, join
 
+# loading Stanford tagger
+# please specify the path to StanfordCoreNLP when first using the program
+nlp = StanfordCoreNLP("/path/to/StanfordCoreNLP/")
+# setting the properties for the nlp annotator
+props = {'annotators': 'tokenize,ssplit,pos,lemma', 'tokenize.whitespace': 'true', 'outputFormat': 'json'}
+# spelling standardization patten
+
 
 def get_filenames_from_dir(file_dir):
     file_names = [f for f in listdir(file_dir) if isfile(join(file_dir, f)) if f != '.DS_Store']
@@ -82,13 +89,6 @@ def text_cleaning(raw_text):
     # stripping extra whitespaces
     text = re.sub(r'\s+', ' ', text).strip()
     return text
-
-
-# loading Stanford tagger
-nlp = StanfordCoreNLP("/Users/wzx/p_package/stanford-corenlp-4.1.0")
-# setting the properties for the nlp annotator
-props = {'annotators': 'tokenize,ssplit,pos,lemma', 'tokenize.whitespace': 'true', 'outputFormat': 'json'}
-# spelling standardization patten
 
 
 def text_annotating(raw_text):
