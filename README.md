@@ -31,7 +31,8 @@ Besides, built-in packages are heavily employed in the program, especially the b
 ### path to StanfordCoreNLP
 **Please specify _the directory to StanfordCoreNLP_ in the text_processor.py under LFE folder when first using the program.**
 - [X] `nlp = StanfordCoreNLP("/path/to/StanfordCoreNLP/")` 
-example: nlp = StanfordCoreNLP("/Users/wzx/p_package/stanford-corenlp-4.1.0")
+
+Example: nlp = StanfordCoreNLP("/Users/wzx/p_package/stanford-corenlp-4.1.0")
 
 ### Dealing with a corpus of files
 ```
@@ -70,10 +71,51 @@ lfe.save_corpus_one_extracted_feature_by_regex(rf'{ART} {ADJ} {NOUN}', 2, 2, 'No
 ```
 
 ### Dealing with a text
-'''
+```
+from LFE import extractor as ex
+# check the functionalities contained in ex by dir(ex)
+# show built-in feature names
+print(ex.show_feature_names())   # Six letter words and longer, Contraction, Agentless passive, By passive...
+# get built-in features' regex by its name
+print(ex.get_feature_regex_by_name('Contraction'))  # (n't| '\S\S?)_[^P]\S+
+# get built-in features' names by regex
+print(ex.get_feature_name_by_regex(r"(n't| '\S\S?)_[^P]\S+"))  # Contraction
 
-'''
+# text processing
+# tagged file
+ex.save_single_tagged_text('/path/to/the/file')
+# cleaned file
+ex.save_single_cleaned_text('/path/to/the/file')
 
+# display extracted feature by name
+res = ex.display_extracted_feature_by_name('/path/to/the/file', 'Contraction', left=0, right=0)
+print(res)  #  's_VBZ, n't_NEG, 've_VBP...
+# save the result
+ex.save_extracted_feature_by_name('/path/to/the/file', 'Contraction', left=0, right=0)
+
+# display extracted feature by regex, for example, noun phrase
+from LFE import features_set as fs
+ART = fs.ART
+ADJ = fs.ADJ
+NOUN = fs.NOUN
+res = ex.display_extracted_feature_by_regex(rf'{ART} {ADJ} {NOUN}', 2, 2, 'Noun phrase')
+print(res)  # One_CD is_VBZ	【 the_DT extraordinary_JJ evidence_NN 】	of_IN human_JJ
+# save the result
+ex.save_extracted_feature_by_regex(rf'{ART} {ADJ} {NOUN}', 2, 2, 'Noun phrase')
+
+# get the frequency data of all the linguistic features for a file 
+res = ex.get_single_file_feature_fre(file_path, normalized_rate=100, save_tagged_file=True, save_extracted_features=True, left=0, right=0)
+print(res)
+```
+
+### Dealing with a part of the corpus
+```
+from LFE.extractor import *
+lfe = CorpusLFE('/directory/to/the/corpus/under/analysis/')
+# get_filepath_list and select the files you want to examine and construct a list
+fp_list = lfe.get_filepath_list()   
+# loop with the list and use the functionalities mentioned above to get the results you want
+```
 
 
 ## Comparison with MAT
