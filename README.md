@@ -37,9 +37,17 @@ lfe = CorpusLFE('/directory/to/the/corpus/under/analysis/')
 lfe.corpus_feature_fre_extraction() 
 ```
 By default, this will result in: (1) a .xlsx file containing the frequency data of all the linguistic features for all the files in the corpus; (2) a newly created folder called `ST_POS_TAGGED` under the corpus folder that contained the tagged corpus by Stanford POS tagger; (3) another new folder called `Extracted_Features` that contains 93 sub-folders named after each linguistic feature (except two mean word length, type-token ratio) where the extracted results for the specific feature are stored separately in .txt files.
-**To turn off the tagged corpus and extracted features**: `lfe.corpus_feature_fre_extraction(save_tagged_corpus=False, save_extracted_features=False)`
-**To change the normalized rate for the features**: `lfe.corpus_feature_fre_extraction(normalized_rate=XXXX)`. The default rate is 100, meaning each feature, except 2 already normalized features, mean word length and type-token ratio, is all normalized at 100 words level.
-**To display contexts for extracted features**: use `lfe.corpus_feature_fre_extraction(left=XX, right=XX)` to specify how many words you'd like to see to the left or right of the target feature. Of course, please do not turn of `save_extracted_features=True` first. 
+
+   - **To turn off the tagged corpus and extracted features**: 
+`lfe.corpus_feature_fre_extraction(save_tagged_corpus=False, save_extracted_features=False)`
+
+   - **To change the normalized rate for the features**: 
+`lfe.corpus_feature_fre_extraction(normalized_rate=XXXX)`. 
+The default rate is 100, meaning each feature, except 2 already normalized features, mean word length and type-token ratio, is all normalized at 100 words level.
+
+   - **To display contexts for extracted features**: 
+use `lfe.corpus_feature_fre_extraction(left=XX, right=XX)` to specify how many words you'd like to see to the left or right of the target feature. Of course, please do not turn of `save_extracted_features=True` first. 
+
 - Baisc Use: to save cleaned corpus or tagged corpus or extracted features
 
 ```
