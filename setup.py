@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="linguistic feature extraction",
+    name="LFExtractor",
     version="0.0.1",
     packages=['LFE'],
     description="A corpus-linguistic tool to extract 95 general linguistic features",
