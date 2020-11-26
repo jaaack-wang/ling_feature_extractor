@@ -1,0 +1,22 @@
+
+########## 19 cases found: Perfect aspect ##########
+
+ 've_VBP been_VBN
+ have_VBP been_VBN
+ 've_VBP had_VBN
+ have_VB seen_VBN
+ had_VBD the_DT place_NN crammed_VBD
+ had_VBD He_PRP did_VBD
+ have_VBP lost_VBN
+ have_VBP become_VBN
+ 've_VBP got_VBN
+ 'd_VBD known_VBN
+ 'd_MD had_VBD
+ 've_VBP talked_VBN
+ have_VBP never_RB heard_VBN
+ Have_VBP you_PRP heard_VBN
+ had_VBD n't_NEG been_VBN
+ 've_VBP listened_VBN
+ have_VB put_VBN
+ has_VBZ mined_VBN
+ 've_VBP talked_VBN

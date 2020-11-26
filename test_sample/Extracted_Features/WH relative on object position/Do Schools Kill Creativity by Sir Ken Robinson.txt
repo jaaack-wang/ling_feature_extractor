@@ -1,0 +1,6 @@
+
+########## 3 cases found: WH relative on object position ##########
+
+ part_NN of_IN Joseph_NNP which_WDT we_PRP
+ In_IN fact_NN creativity_NN which_WDT I_PRP
+ a_DT wonderful_JJ woman_NN who_WP most_JJS

@@ -1,0 +1,27 @@
+
+########## 24 cases found: Place noun ##########
+
+ place_NN
+ place_NN
+ place_NN
+ class_NN
+ country_NN
+ Earth_NNP
+ top_NN
+ bottom_NN
+ Earth_NNP
+ planet_NN
+ grounds_NNS
+ shaft_NN
+ forest_NN
+ forest_NN
+ room_NN
+ room_NN
+ room_NN
+ room_NN
+ room_NN
+ earth_NN
+ earth_NN
+ earth_NN
+ earth_NN
+ place_NN

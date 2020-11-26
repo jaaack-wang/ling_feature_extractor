@@ -1,0 +1,53 @@
+
+########## 50 cases found: Predictive adjective ##########
+
+ been_VBN great_JJ has_VBZ
+ are_VBP rather_RB relevant_JJ to_IN
+ very_RB interesting_JJ If_IN
+ bit_NN strange_JJ to_IN
+ goes_VBZ deep_JJ with_IN
+Am_VBP I_PRP right_JJ Like_IN
+ is_VBZ extraordinary_JJ The_DT
+ 's_VBZ exceptional_JJ but_CC
+ speak_VB exceptional_JJ in_IN
+ as_IN important_JJ in_IN
+ was_VBD fascinated_JJ She_PRP
+ be_VB honest_JJ I_PRP
+ being_VBG strict_JJ about_IN
+ was_VBD big_JJ It_PRP
+ were_VBD thrilled_JJ about_IN
+ crammed_VBD full_JJ of_IN
+ You_PRP okay_JJ with_IN
+Am_VBP I_PRP right_JJ They_PRP
+ 're_VBP not_NEG frightened_JJ of_IN
+ being_VBG wrong_JJ Now_RB
+ being_VBG wrong_JJ is_VBZ
+ being_VBG creative_JJ What_WP
+ be_VB wrong_JJ you_PRP
+ be_VB wrong_JJ By_IN
+ become_VBN frightened_JJ of_IN
+ being_VBG wrong_JJ We_PRP
+ was_VBD really_RB upset_JJ on_IN
+ were_VBD rather_RB pleased_JJ about_IN
+ is_VBZ rather_RB important_JJ I_PRP
+ is_VBZ very_RB important_JJ but_CC
+ an_DT alien_JJ and_CC
+ 're_VBP rather_RB curious_JJ and_CC
+ were_VBD good_JJ at_IN
+Is_VBZ n't_NEG that_DT true_JJ When_WRB
+ is_VBZ dynamic_JJ If_IN
+ is_VBZ wonderfully_RB interactive_JJ The_DT
+ 's_VBZ thicker_JJR in_IN
+ 's_VBZ good_JJ at_IN
+ get_VBP annoyed_JJ I_PRP
+is_VBZ he_PRP still_RB wrong_JJ The_DT
+ was_VBD interesting_JJ when_WRB
+ was_VBD really_RB hopeless_JJ The_DT
+ was_VBD always_RB late_JJ and_CC
+ be_VB very_RB long_JJ And_CC
+ is_VBZ n't_NEG sick_JJ She_PRP
+ was_VBD full_JJ of_IN
+ been_VBN responsible_JJ for_IN
+ 's_VBZ right_JJ What_WDT
+ be_VB careful_JJ now_RB
+ this_DT future_JJ By_IN

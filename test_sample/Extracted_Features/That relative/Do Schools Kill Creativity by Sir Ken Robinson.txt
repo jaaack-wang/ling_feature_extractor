@@ -1,0 +1,18 @@
+
+########## 15 cases found: That relative ##########
+
+ presentations_NNS that_WDT we_PRP
+ things_NNS that_WDT goes_VBZ
+ education_NN that_WDT 's_VBZ
+ future_NN that_WDT we_PRP
+ expertise_NN that_WDT 's_VBZ
+ capacities_NNS that_WDT children_NNS
+ planet_NN that_WDT teaches_VBZ
+ ways_NNS that_WDT we_PRP
+ ideas_NNS that_WDT have_VBP
+ nerves_NNS that_WDT joins_VBZ
+ radio_NN that_WDT was_VBD sitting_VBG
+ revolution_NN that_WDT was_VBD triggered_VBN
+ way_NN that_WDT we_PRP
+ scenarios_NNS that_WDT we_PRP
+ hope_NN that_IN they_PRP

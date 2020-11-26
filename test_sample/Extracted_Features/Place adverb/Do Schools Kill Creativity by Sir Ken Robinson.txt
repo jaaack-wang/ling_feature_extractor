@@ -1,0 +1,9 @@
+
+########## 6 cases found: Place adverb ##########
+
+ away_RB
+ outside_RB
+ around_IN
+ away_RB
+ around_IN
+ beneath_IN

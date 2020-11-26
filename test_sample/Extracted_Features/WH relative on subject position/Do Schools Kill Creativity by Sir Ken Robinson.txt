@@ -1,0 +1,14 @@
+
+########## 11 cases found: WH relative on subject position ##########
+
+ through_IN the_DT conference_NN which_WDT are_VBP
+ of_IN extraordinary_JJ dedication_NN who_WP found_VBD
+ a_DT little_JJ girl_NN who_WP was_VBD
+ just_RB outside_RB Stratford_NNP which_WDT is_VBZ
+ at_IN the_DT output_NN who_WP really_RB succeeds_VBZ
+ 're_VBP the_DT people_NNS who_WP come_VBP
+ is_VBZ academic_JJ ability_NN which_WDT has_VBZ
+ meal_NN at_IN home_NN which_WDT is_VBZ
+ moment_NN called_VBN Epiphany_NNP which_WDT is_VBZ based_VBN
+ like_IN me_PRP people_NNS who_WP could_MD n't_NEG sit_VB
+ by_IN Jonas_NNP Salk_NNP who_WP said_VBD

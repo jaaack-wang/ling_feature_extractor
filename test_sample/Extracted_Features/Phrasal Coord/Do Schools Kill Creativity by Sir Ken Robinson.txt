@@ -1,0 +1,22 @@
+
+########## 19 cases found: Phrasal Coord ##########
+
+religion_NN
+agents_NNS
+frankincense_NN
+mathematics_NNS
+Art_NN
+drama_NN
+there_RB
+men_NNS
+valued_VBN
+work_NN
+forest_NN
+choreographer_NN
+Cats_NNS
+1930s_NNS
+led_VBN
+went_VBD
+went_VBD
+stand_VB
+are_VBP

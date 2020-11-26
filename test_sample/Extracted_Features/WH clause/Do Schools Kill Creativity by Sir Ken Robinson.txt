@@ -1,0 +1,47 @@
+
+########## 44 cases found: WH clause ##########
+
+ what_WP I_PRP
+ where_WRB we_PRP
+ what_WP 's_VBZ
+ how_WRB this_DT
+ what_WP I_PRP
+ why_WRB me_PRP
+ what_WP the_DT
+ what_WP she_PRP
+ What_WP you_PRP
+ what_WP God_NNP
+ When_WRB my_PRP$
+ Wherever_WRB he_PRP
+ where_WRB the_DT
+ What_WDT these_DT
+ What_WP we_PRP
+ where_WRB mistakes_NNS
+ what_WP a_DT
+ where_WRB Shakespeare_NNP
+ How_WRB annoying_JJ
+ what_WP about_IN
+ when_WRB you_PRP
+ when_WRB you_PRP
+ when_WRB you_PRP
+ where_WRB you_PRP
+ Why_WRB Why_WRB
+ what_WP happens_VBZ
+ What_WP 's_VBZ
+ when_WRB you_PRP
+ When_WRB I_PRP
+ where_WRB the_DT
+ why_WRB women_NNS
+ how_WRB they_PRP
+ how_WRB people_NNS
+ when_WRB she_PRP
+ where_WRB they_PRP
+ When_WRB they_PRP
+ What_WP happened_VBD
+ how_WRB wonderful_JJ
+ What_WP I_PRP
+ What_WDT TED_NNP
+ What_WP if_IN
+ What_WP if_IN
+ where_WRB artistic_JJ
+ where_WRB inspired_VBN

@@ -1,0 +1,33 @@
+
+########## 30 cases found: Progressive tense ##########
+
+ 'm_VBP leaving_VBG
+ 's_VBZ going_VBG
+ be_VB retiring_VBG
+ be_VB educating_VBG
+ was_VBD n't_NEG she_PRP Just_RB seeing_VBG
+ are_VBP you_PRP drawing_VBG
+ 'm_VBP drawing_VBG
+ 're_VBP being_VBG
+ 're_VBP sitting_VBG
+ 're_VBP now_RB running_VBG
+ are_VBP educating_VBG
+ were_VBD leaving_VBG
+ 're_VBP not_NEG going_VBG
+ be_VB graduating_VBG
+ are_VBP often_RB heading_VBG
+ is_VBZ shifting_VBG
+ is_VBZ cooking_VBG
+ 's_VBZ cooking_VBG
+ is_VBZ dealing_VBG
+ 's_VBZ talking_VBG
+ 's_VBZ painting_VBG
+ 's_VBZ doing_VBG
+ 'm_VBP cooking_VBG
+ 'm_VBP trying_VBG
+ 'm_VBP doing_VBG
+ was_VBD fidgeting_VBG
+ was_VBD having_VBG
+ was_VBD disturbing_VBG
+ was_VBD sitting_VBG
+ are_VBP educating_VBG

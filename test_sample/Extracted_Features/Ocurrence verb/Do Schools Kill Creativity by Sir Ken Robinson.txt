@@ -1,0 +1,18 @@
+
+########## 15 cases found: Ocurrence verb ##########
+
+ happen_VB
+ happened_VBD
+ become_VBN
+ grow_VBP
+ grow_VB
+ grow_VBP
+ happens_VBZ
+ grow_VB
+ falls_VBZ
+ happen_VB
+ happened_VBD
+ became_VBD
+ disappear_VB
+ disappeared_VBD
+ become_VB

@@ -1,0 +1,6 @@
+
+########## 3 cases found: Pro-verb do ##########
+
+ doing_VBG
+ doing_VBG
+ doing_VBG

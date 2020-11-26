@@ -1,0 +1,4 @@
+
+########## 1 cases found: Past participial clause ##########
+
+ kings_NNS come_VBN in_IN

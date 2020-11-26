@@ -1,0 +1,31 @@
+
+########## 28 cases found: Quantity noun ##########
+
+ morning_NN
+ second_NN
+ terms_NNS
+ week_NN
+ future_NN
+ days_NNS
+ time_NN
+ part_NN
+ minutes_NNS
+ minute_NN
+ part_NN
+ parts_NNS
+ time_NN
+ month_NN
+ time_NN
+ day_NN
+ time_NN
+ century_NN
+ second_NN
+ terms_NNS
+ moment_NN
+ day_NN
+ minutes_NNS
+ minute_NN
+ minutes_NNS
+ future_NN
+ future_NN
+ future_NN

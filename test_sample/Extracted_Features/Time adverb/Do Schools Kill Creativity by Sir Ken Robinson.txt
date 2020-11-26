@@ -1,0 +1,25 @@
+
+########## 22 cases found: Time adverb ##########
+
+ now_RB
+ recently_RB
+ Now_RB
+ afterwards_RB
+ Now_RB
+ now_RB
+ once_RB
+ now_RB
+ now_RB
+ Now_RB
+ now_RB
+ Now_RB
+ now_RB
+ yesterday_NN
+ yesterday_NN
+ recently_RB
+ now_RB
+ late_JJ
+ eventually_RB
+ eventually_RB
+ Now_RB
+ now_RB

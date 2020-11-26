@@ -1,0 +1,29 @@
+
+########## 26 cases found: Predictive modal ##########
+
+ will_MD
+ will_MD
+ will_MD
+ will_MD
+ 'll_MD
+ 'll_MD
+ would_MD
+ 'd_MD
+ 'll_MD
+ would_MD
+ 'd_MD
+ 'd_MD
+ will_MD
+ would_MD
+ wo_MD
+ will_MD
+ 'd_MD
+ 'd_MD
+ would_MD
+ 'll_MD
+ wo_MD
+ wo_MD
+ would_MD
+ would_MD
+ 'll_MD
+ will_MD

@@ -1,0 +1,17 @@
+
+########## 14 cases found: Split auxiliaries ##########
+
+ have_VBP n't_NEG there_RB running_VBG
+ 're_VBP never_RB asked_VBN
+ 'll_MD never_RB come_VB
+ 're_VBP now_RB running_VBG
+ 'll_MD never_RB find_VB
+ are_VBP normally_RB given_VBN
+ were_VBD probably_RB steered_VBN
+ would_MD never_RB get_VB
+ has_VBZ really_RB come_VB
+ was_VBD actually_RB stigmatized_VBN
+ are_VBP often_RB heading_VBG
+ 's_VBZ really_RB prompted_VBN
+ have_VBP never_RB heard_VBN
+ was_VBD eventually_RB auditioned_VBN
