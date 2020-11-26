@@ -28,38 +28,55 @@ Besides, built-in packages are heavily employed in the program, especially the b
 - By pip: `pip/pip3 install LFExtractor`
 
 ## Usage
+### path to StanfordCoreNLP
 **Please specify _the directory to StanfordCoreNLP_ in the text_processor.py under LFE folder when first using the program.**
+[x] `nlp = StanfordCoreNLP("/path/to/StanfordCoreNLP/")` 
+example: nlp = StanfordCoreNLP("/Users/wzx/p_package/stanford-corenlp-4.1.0")
+
+
 ### Dealing with a corpus of files
-- Basic Use: to extract frequencies of 95 built-in linguistic features by inputting the corpus directory
 ```
 from LFE.extractor import CorpusLFE
 lfe = CorpusLFE('/directory/to/the/corpus/under/analysis/')
-lfe.corpus_feature_fre_extraction() 
-```
-By default, this will result in: (1) a .xlsx file containing the frequency data of all the linguistic features for all the files in the corpus; (2) a newly created folder called `ST_POS_TAGGED` under the corpus folder that contained the tagged corpus by Stanford POS tagger; (3) another new folder called `Extracted_Features` that contains 93 sub-folders named after each linguistic feature (except two mean word length, type-token ratio) where the extracted results for the specific feature are stored separately in .txt files.
+# get frequency data and tagged corpus and extracted features by default
+lfe.corpus_feature_fre_extraction() lfe.corpus_feature_fre_extraction()    # lfe.corpus_feature_fre_extraction(normalized_rate=100, save_tagged_corpus=True, save_extracted_features=True, left=0, right=0). 
+# change the normalized_rate, trun off tagged text and leave extracted text with specified context to display
+lfe.corpus_feature_fre_extraction(1000, False, True, 2, 3) # extract frequency data only, and the data are normalized at 1000 words.  
 
-**To turn off the tagged corpus and extracted features**: `lfe.corpus_feature_fre_extraction(save_tagged_corpus=False, save_extracted_features=False)`
-
-**To change the normalized rate for the features**: `lfe.corpus_feature_fre_extraction(normalized_rate=XXXX)`. The default rate is 100, meaning each feature, except 2 already normalized features, mean word length and type-token ratio, is all normalized at 100 words level.
-
-**To display contexts for extracted features**: use `lfe.corpus_feature_fre_extraction(left=XX, right=XX)` to specify how many words you'd like to see to the left or right of the target feature. Of course, please do not turn of `save_extracted_features=True` first. 
-
-- Baisc Use: to save cleaned corpus or tagged corpus or extracted features
-
-```
-# save cleaned corpus. The corpus will be tokenized, unpunctuated and several paralinguistic information will be removed.
-lfe.save_cleaned_corpus
-# save tagged corpus
+# get frequency data only
+lfe.corpus_feature_fre_extraction(save_tagged_corpus=False, save_extracted_features=False)
+# get tagged corpus only
 lfe.save_tagged_corpus()
-# save extracted features
-lfe.save_corpus_extracted_features()
-# by default the extracted results will only save the target feature, but it is possible to get the context by specify how many words you'd like to see to the left/right of the target feature
-lfe.save_corpus_extracted_features(left=XX, right=XX)
+# get extracted feature only
+lfe.save_corpus_extracted_features()   # lfe.save_corpus_extracted_features(left=0, right=0)
+# set how many words to display besides the target pattern
+lfe.save_corpus_extracted_features(2, 3)
+
+# extract and save specific linguistic feature by feature name
+# to see the built-in features' names, use `show_feature_names()`
+from LFE.extractor import *
+print(show_feature_names())   # Six letter words and longer, Contraction, Agentless passive, By passive...
+# specify which feature to extract and save
+lfe.save_corpus_one_extracted_feature_by_name('Six letter words and longer')
+
+# extract and save specific linguistic feature by feature regex, for example, 'you know' 
+lfe.save_corpus_one_extracted_feature_by_regex(r'you_\S+ know_\S+', 2, 2, feature_name='You Know')  # Extract phrase 'you know' along with 2 words spanning around. Also remember the '_\S+' at the end of each word since the corpus will be automatically POS tagged.
+# for more complex structure, the features_set.py can be ultilized, for example, to extract "article + adj + noun" structure
+from LFE import features_set as fs
+ART = fs.ART
+ADJ = fs.ADJ
+NOUN = fs.NOUN
+lfe.save_corpus_one_extracted_feature_by_regex(rf'{ART} {ADJ} {NOUN}', 2, 2, 'Noun phrase')
+# result example (use test_sample): away_RB by_IN	【 the_DT whole_JJ thing_NN 】	In_IN fact_NN 
 ```
+
+### Dealing with a text
+'''
+
+'''
 
 
 
 ## Comparison with MAT
 The performance of this extractor has been compared to Nini's(2014) Multidimensional Analysis Tagger (MAT), a similar program that is based solely on Biber(1988) and can be accessed at: https://github.com/andreanini/multidimensionalanalysistagger. The results show that these two programs are generally comparable. There are only 1/3 of the results showing significant differences, the rest being either identical or mostly similar. However, the current program is neater in terms of the code length and in many ways more accurate in the results. The improvements come from three aspects: the adoption of the lastest Stanford POS tagger, instead of the 2013 version used in MAT; bug fixing; and algorithms rewriting. See Algorithms.txt for brief descriptions on the latter two aspects.  
 
-A final package is still yet to be finished. 
