@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 setuptools.setup(
     name="linguistic feature extraction",
     version="0.0.1",
-    packages=['LingFeatureExtractor'],
+    packages=['LFE'],
     description="A corpus-linguistic tool to extract 95 general linguistic features",
     long_description=long_description,
     long_description_content_type="text/markdown",
