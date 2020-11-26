@@ -6,7 +6,6 @@
 - The program is mainly tested on two online accessible corpora, namely [British Academic Spoken Corpus](http://www.reading.ac.uk/AcaDepts/ll/base_corpus/) and [Michigan Corpus of Academic Englush](https://quod.lib.umich.edu/cgi/c/corpus/corpus?page=home;c=micase;cc=micase), but due to copyright concerns, here it is tested on the [test_sample](https://github.com/jaaack-wang/ling_feature_extractor/tree/main/test_sample). 
 
 ## Prerequisites
-The program is written in pure Python language, the release of which should be over 3.6 to make the program properly because of some Python packages it uses. However, Java 1.8+ is also required since StanfordCoreNLP is employed, which is written in pure Java. To use the functionalities of StanfordCoreNLP, a Python Wrapper called stanfordcorenlp is used here.
 
 - `Computer Langauges`: 
    - Python 3.6+: check with cmd: `python --version` or `python3 --version` ([Download Page](https://www.python.org/downloads/)); 
