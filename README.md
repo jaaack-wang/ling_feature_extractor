@@ -108,7 +108,7 @@ res = ex.get_single_file_feature_fre(file_path, normalized_rate=100, save_tagged
 print(res)
 ```
 
-### Dealing with a part of the corpus
+### Dealing with a part of a corpus
 ```
 from LFE.extractor import *
 lfe = CorpusLFE('/directory/to/the/corpus/under/analysis/')
