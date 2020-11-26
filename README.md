@@ -31,7 +31,7 @@ Besides, built-in packages are heavily employed in the program, especially the b
 Example: nlp = StanfordCoreNLP("/Users/wzx/p_package/stanford-corenlp-4.1.0")
 
 ### Dealing with a corpus of files
-```
+```python 
 from LFE.extractor import CorpusLFE
 
 lfe = CorpusLFE('/directory/to/the/corpus/under/analysis/')
@@ -68,7 +68,7 @@ lfe.save_corpus_one_extracted_feature_by_regex(rf'{ART} {ADJ} {NOUN}', 2, 2, 'No
 ```
 
 ### Dealing with a text
-```
+```python
 from LFE import extractor as ex
 
 # check the functionalities contained in ex by dir(ex)
@@ -108,7 +108,7 @@ print(res)
 ```
 
 ### Dealing with a part of a corpus
-```
+```python
 from LFE.extractor import *
 
 lfe = CorpusLFE('/directory/to/the/corpus/under/analysis/')
