@@ -1,0 +1,18 @@
+
+########## 15 cases found: Demonstrative pronoun ##########
+
+ this_DT may_MD
+ That_DT 's_VBZ
+ this_DT is_VBZ
+ That_DT was_VBD
+ that_DT was_VBD
+ this_DT was_VBD
+ that_DT be_VB
+ This_DT was_VBD
+ this_DT is_VBZ
+ this_DT Who_WP
+ this_DT out_IN
+ that_DT Is_VBZ
+ this_DT is_VBZ
+ this_DT was_VBD
+ This_DT oak-paneled_VBD

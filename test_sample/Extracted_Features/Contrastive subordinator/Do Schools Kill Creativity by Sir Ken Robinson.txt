@@ -1,0 +1,18 @@
+
+########## 15 cases found: Contrastive subordinator ##########
+
+ But_CC
+ despite_IN
+ but_CC
+ But_CC
+ but_CC
+ but_CC
+ but_CC
+ but_CC
+ but_CC
+ But_CC
+ but_CC
+ but_CC
+ But_CC
+ but_CC
+ but_CC

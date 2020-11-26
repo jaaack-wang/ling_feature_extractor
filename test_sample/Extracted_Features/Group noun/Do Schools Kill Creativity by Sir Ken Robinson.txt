@@ -1,0 +1,19 @@
+
+########## 16 cases found: Group noun ##########
+
+ school_NN
+ schools_NNS
+ university_NN
+ university_NN
+ school_NN
+ university_NN
+ school_NN
+ home_NN
+ school_NN
+ school_NN
+ school_NN
+ school_NN
+ School_NNP
+ School_NNP
+ company_NN
+ Company_NNP

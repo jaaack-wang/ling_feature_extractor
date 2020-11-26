@@ -1,0 +1,42 @@
+
+########## 39 cases found: Emphatics ##########
+
+ just_RB
+ really_RB
+ Just_RB
+ much_RB
+ full_JJ
+ really_RB
+ just_RB
+ just_RB
+ Anyway_RB
+ do_VBP know_VB
+ most_RBS
+ just_RB
+ Really_RB
+ Anyway_RB
+ just_RB
+ Anyway_RB
+ really_RB
+ much_JJ
+ really_RB
+ all_DT human_JJ
+ just_RB
+ really_RB
+ most_RBS
+ really_RB
+ more_RBR
+ more_JJR
+ more_RBR
+ really_RB
+ really_RB
+ most_JJS
+ Anyway_RB
+ really_RB
+ Anyway_RB
+ Just_RB
+ full_JJ
+ did_VBD tap_VB
+ most_RBS
+ all_DT human_JJ
+ much_RB

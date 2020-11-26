@@ -1,0 +1,9 @@
+
+########## 6 cases found: Downtoner ##########
+
+ partly_RB
+ hardly_RB
+ slightly_RB
+ slightly_RB
+only_JJ
+ only_JJ

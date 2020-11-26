@@ -1,0 +1,32 @@
+
+########## 29 cases found: Independent clause coord ##########
+
+ and_CC you_PRP say_VBP
+ and_CC you_PRP 're_VBP
+ and_CC you_PRP say_VBP
+ And_CC you_PRP say_VBP
+ and_CC we_PRP squander_VBP
+ and_CC I_PRP want_VBP
+ and_CC we_PRP should_MD treat_VB
+ and_CC she_PRP was_VBD
+ and_CC she_PRP said_VBD
+ and_CC they_PRP bring_VBP
+ and_CC they_PRP put_VBD
+ and_CC if_IN they_PRP do_VBP n't_NEG know_VB
+ or_CC rather_RB we_PRP get_VBP
+ and_CC I_PRP just_RB wanted_VBD
+ and_CC we_PRP were_VBD
+ and_CC then_RB we_PRP focus_VBP
+ and_CC I_PRP sued_VBD
+ and_CC I_PRP say_VBP
+ and_CC there_EX 's_VBZ
+ and_CC now_RB you_PRP need_VBP
+ and_CC it_PRP indicates_VBZ
+ and_CC I_PRP had_VBD
+ and_CC she_PRP was_VBD
+ And_CC they_PRP went_VBD
+ and_CC he_PRP turned_VBD
+ and_CC he_PRP said_VBD
+ and_CC it_PRP was_VBD
+ and_CC she_PRP 's_VBZ
+ and_CC that_IN we_PRP avert_VBP

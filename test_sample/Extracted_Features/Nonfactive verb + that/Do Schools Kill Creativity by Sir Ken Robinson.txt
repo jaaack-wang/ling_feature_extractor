@@ -1,0 +1,5 @@
+
+########## 2 cases found: Nonfactive verb + that ##########
+
+ say_VB that_IN
+ said_VBD that_IN

@@ -1,0 +1,19 @@
+
+########## 16 cases found: Indefinite pronoun ##########
+
+ everybody_NN
+ somebody_NN
+ Nobody_NN
+ nobody_NN
+ anything_NN
+ somebody_NN
+ everybody_NN
+ Something_NN
+ Everyone_NN
+ everything_NN
+ something_NN
+ anything_NN
+ nobody_NN
+ everybody_NN
+ Somebody_NN
+ something_NN

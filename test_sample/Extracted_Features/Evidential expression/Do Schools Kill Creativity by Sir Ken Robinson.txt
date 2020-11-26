@@ -1,0 +1,28 @@
+
+########## 25 cases found: Evidential expression ##########
+
+Good_JJ
+ great_JJ
+ rather_RB
+ great_JJ
+ love_VBP
+ okay_JJ
+ wrong_JJ
+ wrong_JJ
+ wrong_JJ
+ wrong_JJ
+ wrong_JJ
+ wrong_JJ
+ problem_NN
+ rather_RB
+ love_NN
+ rather_RB
+ rather_RB
+ like_VBP
+ rather_RB
+ good_JJ
+ better_RBR
+ good_JJ
+ great_JJ
+ wrong_JJ
+ great_JJ

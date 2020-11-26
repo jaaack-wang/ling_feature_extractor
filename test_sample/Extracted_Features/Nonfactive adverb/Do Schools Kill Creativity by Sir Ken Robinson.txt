@@ -1,0 +1,10 @@
+
+########## 7 cases found: Nonfactive adverb ##########
+
+ frankly_
+ speaking_
+ frankly_
+ Truthfully_
+ typically_
+ according_VBG to_
+ frankly_

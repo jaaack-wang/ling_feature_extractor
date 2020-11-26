@@ -1,0 +1,5 @@
+
+########## 2 cases found: Factive verb + that ##########
+
+ know_VB that_DT
+ know_VB that_DT

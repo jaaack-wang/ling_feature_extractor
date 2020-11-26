@@ -1,0 +1,78 @@
+
+########## 75 cases found: Nominalization ##########
+
+ creativity_NN
+ presentations_NN
+ education_NN
+ education_NN
+ education_NN
+ education_NN
+ education_NN
+education_NN
+ education_NN
+ education_NN
+ unpredictability_NN
+ capacities_NN
+capacities_NN
+ innovation_NN
+ dedication_NN
+contention_NN
+ education_NN
+ creativity_NN
+contention_NN
+ creativity_NN
+ education_NN
+ attention_NN
+ Nativity_NN
+ Nativity_NN
+ capacity_NN
+ education_NN
+ capacities_NN
+ creativity_NN
+ transition_NN
+ transition_NN
+ education_NN
+ humanities_NN
+ education_NN
+ education_NN
+ education_NN
+ education_NN
+ university_NN
+ university_NN
+ achievement_NN
+ affection_NN
+education_NN
+ ability_NN
+ education_NN
+ revolution_NN
+ ability_NN
+ universities_NN
+ education_NN
+ university_NN
+ education_NN
+ combination_NN
+transformation_NN
+ population_NN
+ inflation_NN
+ education_NN
+ movement_NN
+ interactions_NN
+ presentations_NN
+ compartments_NN
+ creativity_NN
+ interaction_NN
+ moment_NN
+ conversation_NN
+ condition_NN
+ productions_NN
+ medication_NN
+ revolution_NN
+ conception_NN
+conception_NN
+ richness_NN
+ capacity_NN
+education_NN
+ commodity_NN
+ imagination_NN
+ capacities_NN
+ richness_NN

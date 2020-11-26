@@ -1,0 +1,9 @@
+
+########## 6 cases found: Modality verb + to ##########
+
+ get_VBP to_TO
+ allowed_VBN to_TO
+ afford_VB to_TO
+ trying_VBG to_TO
+ got_VBD to_TO
+ get_VB to_TO

@@ -1,0 +1,27 @@
+
+########## 24 cases found: Factive adverb ##########
+
+ Actually_RB
+ Actually_RB
+ never_RB
+ really_RB
+ Actually_RB
+ really_RB
+ never_RB
+ Actually_RB
+ never_RB
+ Really_RB
+ Actually_RB
+ really_RB
+ never_RB
+ really_RB
+ really_RB
+ never_RB
+ really_RB
+ actually_RB
+ Actually_RB
+ really_RB
+ really_RB
+ never_RB
+ really_RB
+ always_RB
