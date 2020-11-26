@@ -32,7 +32,7 @@ def get_feature_name_by_regex(regex, feature_name=None):
 
 def save_single_tagged_text(file_path):
     filename = file_path.split('/')[-1]
-    raw_text = open(file_path, 'r').read()
+    raw_text = str(open(file_path, 'rb').read())
     tagged_text = tp.get_pos_tagged_text(raw_text)
     tp.save_processed_text(file_path, 'ST_' + filename, 'ST_POS_TAGGED', tagged_text)
     print(filename + ' tagged')
@@ -40,21 +40,21 @@ def save_single_tagged_text(file_path):
 
 def save_single_cleaned_text(file_path):
     filename = file_path.split('/')[-1]
-    raw_text = open(file_path, 'r').read()
+    raw_text = str(open(file_path, 'rb').read())
     cleaned_text = tp.text_cleaning(raw_text)
     tp.save_processed_text(file_path, filename, 'CLEANED', cleaned_text)
     print(filename + ' cleaned')
 
 
 def display_extracted_feature_by_name(file_path, feature_name, left=0, right=0):
-    raw_text = open(file_path).read()
+    raw_text = str(open(file_path, 'rb').read())
     tagged_text = tp.get_modified_pos_tagged_text(raw_text)
     pattern = get_feature_regex_by_name(feature_name)
     return fs.display_extracted_res_by_regex(pattern, tagged_text, left, right, feature_name)
 
 
 def display_extracted_feature_by_regex(file_path, regex, left=0, right=0, feature_name=None):
-    raw_text = open(file_path).read()
+    raw_text = str(open(file_path, 'rb').read())
     tagged_text = tp.get_modified_pos_tagged_text(raw_text)
     if '(' not in regex and ')' not in regex:
         regex = '(' + regex + ')'
@@ -104,7 +104,7 @@ def get_single_file_feature_fre(file_path, normalized_rate=100, save_tagged_file
                                 save_extracted_features=True, left=0, right=0):
     sub_data = []
 
-    raw_text = open(file_path, 'r').read()
+    raw_text = str(open(file_path, 'rb').read())
     filename = file_path.split('/')[-1]
     tagged_text = tp.get_modified_pos_tagged_text(raw_text)
 
@@ -176,7 +176,7 @@ class CorpusLFE:
         other_feature_patterns = [v for v in fs.FEATURE_DICT.values()]
         filenames = tp.get_filenames_from_dir(self._file_dir)
         for filename in filenames:
-            raw_text = open(self._file_dir + filename, 'r').read()
+            raw_text = str(open(self._file_dir + filename, 'rb').read())
             tagged_text = tp.get_modified_pos_tagged_text(raw_text)
             for pattern in other_feature_patterns:
                 results = fs.feature_finder(pattern, tagged_text)
