@@ -1,8 +1,8 @@
 # ling_feature_extractor
 ## Description
-A linguistic feature extraction program that has 95 general lexico-grammatical features built in. It is built to be corpus-linguistic tool to study langauge and gender macroscopically, but since all the built-in features are very general, it is possible to use it jsut a general tool to study textual variation of spoken or written texts. Besides, the program is also part of my thesis project. The thesis version contains three more built-in linguistic features, which are deleted in the main version because those features are not deemed as generally accessible in a normal corpus.  
+A linguistic feature extraction program that has `95 general lexico-grammatical features built in`. It is built to be `corpus-linguistic tool` to study langauge and gender macroscopically, but since all the built-in features are very general, it is possible to use it jsut a general tool to study textual variation of spoken or written texts. Besides, the program is also part of my thesis project. The thesis version contains three more built-in linguistic features, which are deleted in the main version because those features are not deemed as generally accessible in a normal corpus, i.e., words per utterance, number of utterances, and number of overlaps.  
 
-`As for the linguistic features`: Over 2/3 of them come from Biber et al.(2006) with 42 features also present in Biber(1988). These features are generally known as part of the Multi-Dimensional analysis framework.
+`As for the linguistic features`: Over 2/3 of them come from Biber et al.(2006) with 42 features also present in Biber(1988). These features are generally known as part of the Multi-Dimensional (MD) analysis framework.
 
 `As for the program`: the program can be very useful as a search engine to match desired pattern in a corpus. All it takes is a corpus and corresponding pattern of the deisred feature written in Regular Expression. 
 
@@ -10,8 +10,8 @@ A linguistic feature extraction program that has 95 general lexico-grammatical f
 The program is written in pure Python language, the release of which should be over 3.6 to make the program properly because of some Python packages it uses. However, Java 1.8+ is also required since StanfordCoreNLP is employed, which is written in pure Java. To use the functionalities of StanfordCoreNLP, a Python Wrapper called stanfordcorenlp is used here.
 
 - `Computer Langauges`: 
- -Python 3.6+: check with cmd: `python --version` or `python3 --version` ([Download Page](https://www.python.org/downloads/)); 
- -Java 1.8+: check with cmd: 'java --version' ([Download Page](https://www.java.com/en/download/)). 
+ - Python 3.6+: check with cmd: `python --version` or `python3 --version` ([Download Page](https://www.python.org/downloads/)); 
+ - Java 1.8+: check with cmd: 'java --version' ([Download Page](https://www.java.com/en/download/)). 
 - `Python packages`
 
 | Package | Description | Pip download | 
