@@ -10,8 +10,8 @@ A linguistic feature extraction program that has `95 general lexico-grammatical 
 The program is written in pure Python language, the release of which should be over 3.6 to make the program properly because of some Python packages it uses. However, Java 1.8+ is also required since StanfordCoreNLP is employed, which is written in pure Java. To use the functionalities of StanfordCoreNLP, a Python Wrapper called stanfordcorenlp is used here.
 
 - `Computer Langauges`: 
- - Python 3.6+: check with cmd: `python --version` or `python3 --version` ([Download Page](https://www.python.org/downloads/)); 
- - Java 1.8+: check with cmd: 'java --version' ([Download Page](https://www.java.com/en/download/)). 
+   - Python 3.6+: check with cmd: `python --version` or `python3 --version` ([Download Page](https://www.python.org/downloads/)); 
+   - Java 1.8+: check with cmd: 'java --version' ([Download Page](https://www.java.com/en/download/)). 
 - `Python packages`
 
 | Package | Description | Pip download | 
