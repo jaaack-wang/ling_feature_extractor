@@ -110,16 +110,21 @@ def get_single_file_feature_fre(file_path, normalized_rate=100, save_tagged_file
 
     if save_tagged_file:
         save_single_tagged_text(file_path)
-
+        
+    num_utterances = fs.num_utterances(raw_text)
+    num_overlaps = fs.num_overlaps(raw_text)
     num_words = fs.word_count(tagged_text)
     num_chars = fs.total_char(tagged_text)
     num_types = len(set(tp.get_texts_lemmas(raw_text)))
 
     # start calculating feature frequency
 
+    words_per_utter = num_words / num_utterances
+    utter = num_utterances / num_words * normalized_rate
     mean_word_len = num_chars / num_words
     type_token_ratio = num_types / num_words
-    sub_data.extend([mean_word_len, type_token_ratio])
+    overlaps = num_overlaps / num_words * normalized_rate    
+    sub_data.extend([words_per_utter, utter, mean_word_len, type_token_ratio, overlaps])
 
     other_feature_patterns = [v for v in fs.FEATURE_DICT.values()]
     for pattern in other_feature_patterns:
@@ -161,7 +166,7 @@ class CorpusLFE:
 
     def corpus_feature_fre_extraction(self, normalized_rate=100, save_tagged_corpus=True,
                                       save_extracted_features=True, left=0, right=0):
-        freq_data = [['Filename', 'Words', 'Mean word length', 'Type-token ratio']]
+        freq_data = [['Filename', 'Words', 'Words per utterance', 'Utterance', 'Mean word length', 'Type-token ratio', 'Overlap']]
         feature_names = [k for k in fs.FEATURE_DICT.keys()]
         freq_data[0].extend(feature_names)
         filenames = tp.get_filenames_from_dir(self._file_dir)
