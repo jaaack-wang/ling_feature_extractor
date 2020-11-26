@@ -172,7 +172,7 @@ class CorpusLFE:
         pd.DataFrame(freq_data).to_excel('Feature_Fre_Extracted.xlsx')
         return freq_data
 
-    def save_corpus_extracted_features(self):
+    def save_corpus_extracted_features(self, left=0, right=0):
         other_feature_patterns = [v for v in fs.FEATURE_DICT.values()]
         filenames = tp.get_filenames_from_dir(self._file_dir)
         for filename in filenames:
@@ -182,7 +182,7 @@ class CorpusLFE:
                 results = fs.feature_finder(pattern, tagged_text)
                 feature_name = get_feature_name_by_regex(pattern)
                 file_p = self._file_dir + filename
-                save_extracted_feature_by_res(file_p, results, feature_name, tagged_text, left=0, right=0)
+                save_extracted_feature_by_res(file_p, results, feature_name, tagged_text, left, right)
         print('The extracted features of the corpus saved!')
 
     def save_corpus_one_extracted_feature_by_name(self, feature_name):
