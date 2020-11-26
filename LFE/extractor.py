@@ -185,10 +185,10 @@ class CorpusLFE:
                 save_extracted_feature_by_res(file_p, results, feature_name, tagged_text, left, right)
         print('The extracted features of the corpus saved!')
 
-    def save_corpus_one_extracted_feature_by_name(self, feature_name):
+    def save_corpus_one_extracted_feature_by_name(self, feature_name, left=0, right=0):
         filenames = tp.get_filenames_from_dir(self._file_dir)
         for filename in filenames:
-            save_extracted_feature_by_name(self._file_dir + filename, feature_name)
+            save_extracted_feature_by_name(self._file_dir + filename, feature_name, left, right)
 
     def save_corpus_one_extracted_feature_by_regex(self, regex, left=0, right=0, feature_name=None):
         filenames = tp.get_filenames_from_dir(self._file_dir)
