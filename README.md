@@ -33,6 +33,7 @@ Example: nlp = StanfordCoreNLP("/Users/wzx/p_package/stanford-corenlp-4.1.0")
 ### Dealing with a corpus of files
 ```
 from LFE.extractor import CorpusLFE
+
 lfe = CorpusLFE('/directory/to/the/corpus/under/analysis/')
 # get frequency data and tagged corpus and extracted features by default
 lfe.corpus_feature_fre_extraction() lfe.corpus_feature_fre_extraction()    # lfe.corpus_feature_fre_extraction(normalized_rate=100, save_tagged_corpus=True, save_extracted_features=True, left=0, right=0). 
@@ -69,6 +70,7 @@ lfe.save_corpus_one_extracted_feature_by_regex(rf'{ART} {ADJ} {NOUN}', 2, 2, 'No
 ### Dealing with a text
 ```
 from LFE import extractor as ex
+
 # check the functionalities contained in ex by dir(ex)
 # show built-in feature names
 print(ex.show_feature_names())   # Six letter words and longer, Contraction, Agentless passive, By passive...
@@ -91,6 +93,7 @@ ex.save_extracted_feature_by_name('/path/to/the/file', 'Contraction', left=0, ri
 
 # display extracted feature by regex, for example, noun phrase
 from LFE import features_set as fs
+
 ART = fs.ART
 ADJ = fs.ADJ
 NOUN = fs.NOUN
@@ -107,8 +110,9 @@ print(res)
 ### Dealing with a part of a corpus
 ```
 from LFE.extractor import *
+
 lfe = CorpusLFE('/directory/to/the/corpus/under/analysis/')
 # get_filepath_list and select the files you want to examine and construct a list
 fp_list = lfe.get_filepath_list()   
-# loop with the list and use the functionalities mentioned above to get the results you want
+# loop through the list and use the functionalities mentioned above to get the results you want
 ```
