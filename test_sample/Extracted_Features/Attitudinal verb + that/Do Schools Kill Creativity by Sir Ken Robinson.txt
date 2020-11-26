@@ -1,0 +1,4 @@
+
+########## 1 cases found: Attitudinal verb + that ##########
+
+ hope_NN that_IN

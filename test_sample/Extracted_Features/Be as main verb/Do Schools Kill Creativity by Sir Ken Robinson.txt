@@ -1,0 +1,132 @@
+
+########## 129 cases found: Be as main verb ##########
+
+ been_VBN great_JJ
+ been_VBN three_CD
+ are_VBP rather_RB relevant_JJ
+ is_VBZ the_DT
+ is_VBZ that_IN
+ 're_VBP at_IN
+ 're_VBP not_NEG often_RB at_IN
+ 's_VBZ a_DT
+ 's_VBZ one_CD
+ been_VBN on_IN
+ is_VBZ extraordinary_JJ
+ is_VBZ that_IN
+ was_VBD a_DT
+ 's_VBZ exceptional_JJ
+ is_VBZ a_DT
+ is_VBZ all_DT
+ is_VBZ that_IN
+ is_VBZ as_IN
+ was_VBD in_IN
+ was_VBD six_CD
+ was_VBD at_IN
+ was_VBD fascinated_JJ
+ was_VBD four_CD
+ was_VBD four_CD
+ be_VB honest_JJ
+ being_VBG strict_JJ
+ was_VBD four_CD
+ was_VBD in_IN
+ was_VBD big_JJ
+ was_VBD a_DT
+ were_VBD thrilled_JJ
+ be_VB one_CD
+ Was_VBD that_IN
+ is_VBZ that_IN
+ 're_VBP not_NEG frightened_JJ
+ being_VBG wrong_JJ
+ being_VBG wrong_JJ
+ is_VBZ the_DT
+ being_VBG creative_JJ
+ is_VBZ if_IN
+ be_VB wrong_JJ
+ be_VB wrong_JJ
+ being_VBG wrong_JJ
+ are_VBP the_DT
+ is_VBZ that_IN
+ is_VBZ this_DT
+ was_VBD from_IN
+ being_VBG a_DT
+ being_VBG seven_CD
+ was_VBD seven_CD
+ was_VBD in_IN
+ 's_VBZ confusing_JJ
+ 's_VBZ 21_CD
+ was_VBD the_DT
+ 's_VBZ a_DT
+ 're_VBP 16_CD
+ was_VBD really_RB upset_JJ
+ were_VBD rather_RB pleased_JJ
+ was_VBD the_DT
+ is_VBZ n't_NEG At_IN
+ are_VBP the_DT
+ 's_VBZ a_DT
+ is_VBZ n't_NEG an_DT
+ is_VBZ rather_RB important_JJ
+ is_VBZ very_RB important_JJ
+ is_VBZ as_IN
+ are_VBP the_DT
+ 're_VBP the_DT
+ be_VB one_CD
+ 're_VBP just_RB a_DT
+ 're_VBP rather_RB curious_JJ
+ 's_VBZ a_DT
+ 's_VBZ a_DT
+ were_VBD no_DT
+ are_VBP at_IN
+ were_VBD a_DT
+ Is_VBZ that_IN
+ be_VB a_DT
+ be_VB an_DT
+ is_VBZ academic_JJ
+ is_VBZ a_DT
+ is_VBZ that_IN
+ 're_VBP not_NEG because_IN
+ were_VBD good_JJ
+ 's_VBZ the_DT
+ are_VBP n't_NEG worth_JJ
+ Is_VBZ n't_NEG that_DT
+ was_VBD a_DT
+ 's_VBZ because_IN
+ 's_VBZ a_DT
+ 's_VBZ diverse_JJ
+ is_VBZ dynamic_JJ
+ is_VBZ wonderfully_RB interactive_JJ
+ is_VBZ By_IN
+ 's_VBZ a_DT
+ 's_VBZ thicker_JJR
+ 's_VBZ a_DT
+ 's_VBZ good_JJ
+ are_VBP out_IN
+ 's_VBZ distinct_JJ
+be_VB there_RB It_PRP
+ 's_VBZ a_DT
+ 's_VBZ wonderful_JJ
+ be_VB on_IN
+ be_VB a_DT
+ was_VBD interesting_JJ
+ was_VBD at_IN
+ was_VBD really_RB hopeless_JJ
+ was_VBD the_DT
+ was_VBD n't_NEG an_DT
+ was_VBD there_RB with_IN
+ was_VBD always_RB late_JJ
+be_VB back_RB We_PRP
+ be_VB very_RB long_JJ
+ was_VBD on_IN
+ is_VBZ n't_NEG sick_JJ
+ 's_VBZ a_DT
+ was_VBD full_JJ
+ been_VBN responsible_JJ
+ 's_VBZ a_DT
+ is_VBZ this_DT
+ was_VBD a_DT
+ were_VBD to_IN
+ 's_VBZ right_JJ
+ is_VBZ the_DT
+ be_VB careful_JJ
+ is_VBZ by_IN
+being_VBG so_RB they_PRP
+ is_VBZ a_DT

@@ -1,0 +1,25 @@
+
+########## 22 cases found: Cognitive noun ##########
+
+ fact_NN
+ idea_NN
+ idea_NN
+ attention_NN
+ fact_NN
+ thought_NN
+ reason_NN
+experience_NN
+ experiences_NNS
+ idea_NN
+ ability_NN
+ reason_NN
+ needs_NNS
+ ideas_NNS
+ ability_NN
+view_NN
+ consequence_NN
+view_NN
+ fact_NN
+ ideas_NNS
+ ideas_NNS
+ ideas_NNS

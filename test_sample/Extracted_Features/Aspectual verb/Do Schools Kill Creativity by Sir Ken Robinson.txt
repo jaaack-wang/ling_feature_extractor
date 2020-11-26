@@ -1,0 +1,9 @@
+
+########## 6 cases found: Aspectual verb ##########
+
+ starting_VBG
+ stop_VB
+ start_VBP
+ end_VB
+ start_VBP
+ end_VB

@@ -1,0 +1,6 @@
+
+########## 3 cases found: Causative verb ##########
+
+ allowed_VBN
+ required_VBD
+ help_VB

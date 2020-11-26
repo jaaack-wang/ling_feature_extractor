@@ -1,0 +1,5 @@
+
+########## 2 cases found: Attitudinal adverb ##########
+
+ curiously_RB
+ wisely_RB

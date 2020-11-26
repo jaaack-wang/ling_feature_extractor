@@ -1,0 +1,42 @@
+
+########## 39 cases found: Concrete noun ##########
+
+ dinner_NN
+ dinner_NN
+face_NN
+ wall_NN
+ drawing_NN
+ drawing_NN
+ picture_NN
+ gifts_NNS
+heads_NNS
+ boxes_NNS
+ bed_NN
+ bed_NN
+ pencil_NN
+heads_NNS
+heads_NNS
+body_NN
+heads_NNS
+head_NN
+ paper_NN
+ video_NN
+ games_NNS
+ brain_NN
+ brain_NN
+ brain_NN
+ brain_NN
+ phone_NN
+heart_NN
+ door_NN
+ phone_NN
+ tree_NN
+ book_NN
+ board_NN
+ chair_NN
+hands_NNS
+ radio_NN
+desk_NN
+ gift_NN
+ gift_NN
+ machines_NNS

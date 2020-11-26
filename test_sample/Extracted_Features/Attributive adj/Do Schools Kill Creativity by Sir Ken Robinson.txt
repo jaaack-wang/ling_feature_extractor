@@ -1,0 +1,115 @@
+
+########## 112 cases found: Attributive adj ##########
+
+Good_JJ
+ the_DT whole_JJ
+ the_DT extraordinary_JJ
+ human_JJ
+ other_JJ
+ big_JJ
+ huge_JJ
+ vested_JJ
+ the_DT past_JJ
+ The_DT third_JJ
+ extraordinary_JJ
+ last_JJ
+ extraordinary_JJ
+ tremendous_JJ
+ the_DT same_JJ
+ great_JJ
+ little_JJ
+ little_JJ
+ big_JJ
+ the_DT lead_JJ
+ the_DT little_JJ
+ little_JJ
+ The_DT first_JJ
+ The_DT second_JJ
+ the_DT third_JJ
+ the_DT same_JJ
+ anything_NN original_JJ
+ national_JJ
+ the_DT worst_JJS
+creative_JJ
+ seamless_JJ
+ new_JJ
+ confusing_JJ
+fourth_JJ
+ long_JJ
+ the_DT main_JJ
+ the_DT same_JJ
+ higher_JJR
+ public_JJ
+ the_DT whole_JJ
+ public_JJ
+ the_DT top_JJ
+ the_DT high_JJ
+ human_JJ
+ something_NN curious_JJ
+ literal_JJ
+ real_JJ
+ out-of-body_JJ
+ residential_JJ
+ senior_JJ
+ the_DT final_JJ
+ grown_JJ
+ academic_JJ
+ The_DT whole_JJ
+ public_JJ
+ the_DT 19th_JJ
+ useful_JJ
+ the_DT top_JJ
+ kid_JJ
+ Benign_JJ
+ The_DT whole_JJ
+ academic_JJ
+ the_DT whole_JJ
+ public_JJ
+ protracted_JJ
+ brilliant_JJ
+ creative_JJ
+ the_DT next_JJ
+ more_JJR
+ the_DT huge_JJ
+ worth_JJ
+ the_DT previous_JJ
+ the_DT other_JJ
+ academic_JJ
+ the_DT whole_JJ
+ abstract_JJ
+ human_JJ
+ original_JJ
+ different_JJ
+ disciplinary_JJ
+personal_JJ
+ old_JJ
+ philosophical_JJ
+ old_JJ
+ great_JJ
+ The_DT third_JJ
+ new_JJ
+ wonderful_JJ
+ most_JJS
+ available_JJ
+ little_JJ
+ few_JJ
+ wonderful_JJ
+own_JJ
+ successful_JJ
+ musical_JJ
+ multi-millionaire_JJ
+ the_DT other_JJ
+only_JJ
+ new_JJ
+ human_JJ
+ human_JJ
+ particular_JJ
+ the_DT fundamental_JJ
+ wonderful_JJ
+ human_JJ
+ the_DT human_JJ
+ The_DT only_JJ
+creative_JJ
+ great_JJ
+ artistic_JJ
+ ultimate_JJ

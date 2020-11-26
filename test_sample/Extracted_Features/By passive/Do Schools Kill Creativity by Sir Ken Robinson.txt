@@ -1,0 +1,7 @@
+
+########## 4 cases found: By passive ##########
+
+ Are_VBP you_PRP struck_VBN by_IN
+ 'm_VBP fascinated_VBN by_IN
+ 's_VBZ really_RB prompted_VBN by_IN
+ was_VBD triggered_VBN by_IN

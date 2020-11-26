@@ -1,0 +1,15 @@
+
+########## 12 cases found: Causative subordinator ##########
+
+ because_IN
+ because_IN
+ because_IN
+ Because_IN
+ because_IN
+ because_IN
+ because_IN
+ because_IN
+ because_IN
+ because_IN
+ because_IN
+ because_IN
