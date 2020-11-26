@@ -1,0 +1,30 @@
+
+########## 27 cases found: Agentless passive ##########
+
+ been_VBN blown_VBN
+ 're_VBP not_NEG asked_VBN
+ 're_VBP never_RB asked_VBN
+ 're_VBP meant_VBN
+ was_VBD born_VBN
+ 're_VBP not_NEG prepared_VBN
+ 're_VBP not_NEG prepared_VBN
+ are_VBP born_VBN
+ was_VBD born_VBN
+ Being_VBG sent_VBN
+ are_VBP normally_RB given_VBN
+ 're_VBP allowed_VBN
+ 're_VBP disembodied_VBN
+ is_VBZ predicated_VBN
+ was_VBD invented_VBN
+ were_VBD probably_RB steered_VBN
+ is_VBZ engulfed_VBN
+ was_VBD n't_NEG valued_VBN
+ was_VBD actually_RB stigmatized_VBN
+ is_VBZ n't_NEG divided_VBN
+ is_VBZ shut_VBN
+ is_VBZ based_VBN
+ been_VBN invented_VBN
+ was_VBD led_VBN
+ was_VBD eventually_RB auditioned_VBN
+ were_VBD n't_NEG cherished_VBN
+ is_VBZ protected_VBN

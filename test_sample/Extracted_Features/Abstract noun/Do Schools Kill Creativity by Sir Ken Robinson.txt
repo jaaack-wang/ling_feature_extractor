@@ -1,0 +1,115 @@
+
+########## 112 cases found: Abstract noun ##########
+
+ presentations_NNS
+ variety_NN
+ interest_NN
+ education_NN
+ interest_NN
+ education_NN
+ education_NN
+ education_NN
+ education_NN
+education_NN
+ religion_NN
+ interest_NN
+ education_NN
+ interest_NN
+ education_NN
+ whole_NN
+ education_NN
+ education_NN
+ way_NN
+ way_NN
+ education_NN
+ systems_NNS
+ result_NN
+ transition_NN
+ transition_NN
+life_NN
+ education_NN
+ system_NN
+ subjects_NNS
+ languages_NNS
+ system_NN
+ music_NN
+ education_NN
+ system_NN
+ way_NN
+ maths_NNS
+ meeting_NN
+ side_NN
+ education_NN
+ education_NN
+ output_NN
+ education_NN
+ achievement_NN
+ life_NN
+ life_NN
+ side_NN
+ kind_NN
+ way_NN
+ way_NN
+ meetings_NNS
+ way_NN
+education_NN
+ system_NN
+ system_NN
+ systems_NNS
+ education_NN
+ subjects_NNS
+ work_NN
+ job_NN
+ music_NN
+ revolution_NN
+ system_NN
+image_NN
+ system_NN
+ education_NN
+ process_NN
+ way_NN
+ education_NN
+ beginning_NN
+ combination_NN
+ effect_NN
+ work_NN
+ job_NN
+ job_NN
+ job_NN
+ process_NN
+ structure_NN
+ education_NN
+ ways_NNS
+ presentations_NNS
+ process_NN
+ value_NN
+ ways_NNS
+ way_NN
+ research_NN
+ life_NN
+ break_NN
+ series_NN
+work_NN
+ disorder_NN
+ condition_NN
+ end_NN
+ end_NN
+ end_NN
+ music_NN
+ career_NN
+ productions_NNS
+ revolution_NN
+education_NN
+ system_NN
+ way_NN
+ principles_NNS
+ life_NN
+ life_NN
+ way_NN
+task_NN
+whole_NN
+ way_NN
+job_NN
+ importance_NN
+ value_NN
+ design_NN

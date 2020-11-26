@@ -1,0 +1,73 @@
+
+########## 70 cases found: Animate noun ##########
+
+ people_NNS
+God_NNP
+ people_NNS
+ person_NN
+ kids_NNS
+ girl_NN
+ teacher_NN
+ girl_NN
+ teacher_NN
+ girl_NN
+ God_NNP
+ teacher_NN
+ God_NNP
+ girl_NN
+son_NN
+ agents_NNS
+ kings_NNS
+ boy_NN
+ boys_NNS
+ boy_NN
+ boy_NN
+ boy_NN
+ kids_NNS
+ adults_NNS
+ kids_NNS
+ people_NNS
+ artists_NNS
+ artist_NN
+ father_NN
+ father_NN
+ child_NN
+son_NN
+ kids_NNS
+daughter_NN
+ girl_NN
+ professors_NNS
+ people_NNS
+ professors_NNS
+ professors_NNS
+ artist_NN
+ people_NNS
+ people_NNS
+ people_NNS
+ student_NN
+ kids_NNS
+wife_NN
+ people_NNS
+ kids_NNS
+ kids_NNS
+ man_NN
+ woman_NN
+ people_NNS
+ people_NNS
+ woman_NN
+ people_NNS
+ Cats_NNS
+parents_NNS
+ people_NNS
+mother_NN
+ man_NN
+ mother_NN
+ people_NNS
+ kid_NN
+ doctor_NN
+mother_NN
+mother_NN
+mother_NN
+ people_NNS
+ people_NNS
+ people_NNS
