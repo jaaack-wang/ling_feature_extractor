@@ -30,9 +30,8 @@ Besides, built-in packages are heavily employed in the program, especially the b
 ## Usage
 ### path to StanfordCoreNLP
 **Please specify _the directory to StanfordCoreNLP_ in the text_processor.py under LFE folder when first using the program.**
-[x] `nlp = StanfordCoreNLP("/path/to/StanfordCoreNLP/")` 
+- [X] `nlp = StanfordCoreNLP("/path/to/StanfordCoreNLP/")` 
 example: nlp = StanfordCoreNLP("/Users/wzx/p_package/stanford-corenlp-4.1.0")
-
 
 ### Dealing with a corpus of files
 ```
