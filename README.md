@@ -1,8 +1,6 @@
 # ling_feature_extractor
 ## Description
-```
-A linguistic feature extraction program that has 95 general lexico-grammatical features built in. It is built to be corpus-linguistic tool to study langauge and gender macroscopically, but since all the built-in features are very general, it is possible to use it jsut a general tool to study textual variation of spoken or written texts. Besides, the program is also part of my thesis project. The thesis version contains three more built-in linguistic features, which are deleted in the main version because those features are not deemed as generally accessible in a normal corpus.
-```  
+`A linguistic feature extraction program that has 95 general lexico-grammatical features built in. It is built to be corpus-linguistic tool to study langauge and gender macroscopically, but since all the built-in features are very general, it is possible to use it jsut a general tool to study textual variation of spoken or written texts. Besides, the program is also part of my thesis project. The thesis version contains three more built-in linguistic features, which are deleted in the main version because those features are not deemed as generally accessible in a normal corpus.`  
 
 `As for the linguistic features`: Over 2/3 of them come from Biber et al.(2006) with 42 features also present in Biber(1988). These features are generally known as part of the Multi-Dimensional analysis framework.
 
@@ -15,6 +13,7 @@ The program is written in pure Python language, the release of which should be o
 -- Python 3.6+: check with cmd: `python --version` or `python3 --version` ([Download Page](https://www.python.org/downloads/)); 
 -- Java 1.8+: check with cmd: 'java --version' ([Download Page](https://www.java.com/en/download/)). 
 - `Python packages`
+
 | Package | Description | Pip download | 
 | :---: | :---: | :---: |
 | [stanfordcorenlp](https://github.com/Lynten/stanford-corenlp) | A Python wrapper for StanforeCoreNLP | 'pip/pip3 install stanfordcorenlp' |
