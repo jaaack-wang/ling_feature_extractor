@@ -7,7 +7,7 @@ setuptools.setup(
     name="LFExtractor",
     version="1.0.0",
     packages=['LFE'],
-    description="A corpus-linguistic tool to extract 95 general linguistic features",
+    description="A corpus-linguistic tool to extract and search for linguistic features",
     long_description=long_description,
     long_description_content_type="text/markdown",
 
