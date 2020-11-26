@@ -21,9 +21,10 @@ The program is written in pure Python language, the release of which should be o
 
 Besides, built-in packages are heavily employed in the program, especially the built-in `re` package for Regular Expression.
 
+## Installation
 
 
-
+## Comparison with MAT
 The performance of this extractor has been compared to Nini's(2014) Multidimensional Analysis Tagger (MAT), a similar program that is based solely on Biber(1988) and can be accessed at: https://github.com/andreanini/multidimensionalanalysistagger. The results show that these two programs are generally comparable. There are only 1/3 of the results showing significant differences, the rest being either identical or mostly similar. However, the current program is neater in terms of the code length and in many ways more accurate in the results. The improvements come from three aspects: the adoption of the lastest Stanford POS tagger, instead of the 2013 version used in MAT; bug fixing; and algorithms rewriting. See Algorithms.txt for brief descriptions on the latter two aspects.  
 
 A final package is still yet to be finished. 
