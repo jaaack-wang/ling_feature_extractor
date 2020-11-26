@@ -3,7 +3,7 @@
 - A corpus-linguistic tool to extract and search for linguistic features in a text or a corpus.
 - There are 95 built-in linguistic features in the main version versus 98 features in the Thesis_Project version. Deleted features are words per utterance, number of utterances, and number of overlaps, which are not deemed as generally accessible in a normal corpus.
 - Over 2/3 of these features come from Biber et al.(2006) with 42 features also present in Biber(1988). These features are generally known as part of the Multi-Dimensional (MD) analysis framework.
-- The program is mainly tested on two online accessible corpora, namely [British Academic Spoken Corpus](http://www.reading.ac.uk/AcaDepts/ll/base_corpus/) and [Michigan Corpus of Academic Englush](https://quod.lib.umich.edu/cgi/c/corpus/corpus?page=home;c=micase;cc=micase), but due to copyright concerns, here it is tested on the test_sample. 
+- The program is mainly tested on two online accessible corpora, namely [British Academic Spoken Corpus](http://www.reading.ac.uk/AcaDepts/ll/base_corpus/) and [Michigan Corpus of Academic Englush](https://quod.lib.umich.edu/cgi/c/corpus/corpus?page=home;c=micase;cc=micase), but due to copyright concerns, here it is tested on the [test_sample](https://github.com/jaaack-wang/ling_feature_extractor/tree/main/test_sample). 
 
 ## Prerequisites
 The program is written in pure Python language, the release of which should be over 3.6 to make the program properly because of some Python packages it uses. However, Java 1.8+ is also required since StanfordCoreNLP is employed, which is written in pure Java. To use the functionalities of StanfordCoreNLP, a Python Wrapper called stanfordcorenlp is used here.
