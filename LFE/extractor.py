@@ -130,7 +130,7 @@ def get_single_file_feature_fre(file_path, normalized_rate=100, save_tagged_file
             feature_name = get_feature_name_by_regex(pattern)
             save_extracted_feature_by_res(file_path, results, feature_name, tagged_text, left, right)
 
-    sub_data = [filename] + [float("%.2f" % sd) for sd in sub_data]
+    sub_data = [filename, num_words] + [float("%.2f" % sd) for sd in sub_data]
     print(filename)
     return sub_data
 
@@ -161,7 +161,7 @@ class CorpusLFE:
 
     def corpus_feature_fre_extraction(self, normalized_rate=100, save_tagged_corpus=True,
                                       save_extracted_features=True, left=0, right=0):
-        freq_data = [['Filename', 'Mean word length', 'Type-token ratio']]
+        freq_data = [['Filename', 'Words', 'Mean word length', 'Type-token ratio']]
         feature_names = [k for k in fs.FEATURE_DICT.keys()]
         freq_data[0].extend(feature_names)
         filenames = tp.get_filenames_from_dir(self._file_dir)
