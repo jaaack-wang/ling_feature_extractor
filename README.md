@@ -1,3 +1,4 @@
+[My MA thesis, titled "A Macroscopic Re-examination of Language and Gender: A Corpus-Based Case Study in University Instructor Discourses", that utilizes this program.](https://harvest.usask.ca/handle/10388/13387)
 # ling_feature_extractor
 ## Description
 - A corpus-linguistic tool to extract and search for linguistic features in a text or a corpus.
